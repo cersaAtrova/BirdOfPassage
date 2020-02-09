@@ -1,0 +1,302 @@
+/* 
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Quicksand', sans-serif;
+ */
+ @import url("../../css/homepage/login.css");
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    --main-txt-color: #181a2b;
+    --main-font-roboto: 'Roboto', sans-serif;
+    --main-font-quicksand: 'Quicksand', sans-serif;
+    --main-bg-color: rgba(235, 235, 235, 0.8);
+}
+
+body {
+    font-family: inherit !important;
+    line-height: normal !important;
+    font-size: inherit !important;
+    color: inherit !important;
+    text-decoration: inherit !important;
+}
+
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    :root {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+/*
+    logo
+    and navigation bar
+    */
+
+div.navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+div.bar_navigation>ul li {
+    display: inline-block;
+    margin: 20px 35px 0 0;
+    font-size: 1.5rem;
+    font-family: var(--main-font-roboto);
+    font-weight: 700;
+    text-align: center;
+}
+
+div.bar_navigation>ul li a {
+    color: #fff;
+    padding: 5px;
+}
+
+div.bar_navigation>ul li:nth-child(3) {
+    border: 2px solid white;
+}
+
+div.bar_navigation>ul>li a:hover {
+    color: #d3d3d39d !important;
+    text-decoration: none;
+}
+
+div.bar_navigation>ul>li:hover {
+    border: 2px solid #d3d3d39d !important;
+}
+
+div.bar_navigation>ul>li a:active {
+    color: #373737;
+    border: 2px solid #fff;
+}
+
+/*
+*
+*first section about trip
+*
+*/
+
+.about_trip {
+    width: 100%;
+    padding: 100px;
+    background-color: var(--main-bg-color) !important;
+}
+.nav_anc{
+    font-size: 0.8rem;
+    font-family: var(--main-font-quicksand);
+}
+
+.about_trip .country {
+    margin: auto;
+    width: 70%;
+    font-family: var(--main-font-roboto);
+    font-size:  0.8rem;
+    font-family: var(--main-font-roboto);
+    text-align: justify;
+}
+
+.show_flex> span {
+    width: 45%;
+    text-align: justify;
+   
+    font-family: var(--main-font-roboto);
+    font-size: 0.8rem;
+}
+
+.show_flex {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+      justify-content: space-evenly;
+}
+.read{
+    font-family: var(--main-font-roboto);
+    width: fit-content;
+    margin: 25px auto;
+    font-size: 0.8rem;
+
+}
+.read:hover{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*Section Ideas
+*
+*/
+#honeymoon_sec,#family_sec{
+    width: 100%;
+    padding: 100px;
+   
+
+}
+#romantic_sec,#luxury_sec{
+    width: 100%;
+    padding: 100px;
+    background-color: var(--main-bg-color) !important;
+
+}
+
+.sec_title{
+   width: 40%;
+     text-align: justify;
+
+}
+.sec_title p{
+    padding: 25px;
+    font-size: 0.8rem;
+    font-family: var(--main-font-quicksand);
+}
+.sec_title h2{
+       font-size:2.5rem;
+    font-family: var(--main-font-roboto);
+}
+
+/* inner box for all section ideas */
+.sec_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between; 
+}
+
+/*
+*most relevant comment
+*/
+.frm_comment_ {
+    margin-right: 50px;
+    width: 45%;
+
+}
+
+.comments__list {
+    width: 45%;
+
+}
+
+.comments__list div.relevant_comment {
+    padding: 10px;
+    border-top: 1px solid var(--main-txt-color) !important;
+    border-bottom: 1px solid var(--main-txt-color) !important;
+}
+
+.comments__list div h3 {
+    padding: 5px 0;
+    font-size: 1.2;
+    color: var(--main-txt-color);
+}
+
+.comments__list div p {
+    color: var(--main-txt-color);
+    font-size: 0.8rem;
+}
+
+/*
+*
+*Footer
+*
+*/
+#footer h1{
+    font-size: 2rem !important  ;
+}
+#footer {
+    width: 100%;
+    margin-top: 100px !important;
+    background-color: #212e40;
+    position: relative;
+}
+
+.footer_section {
+    position: relative;
+    width: 100%;
+    padding: 50px !important;
+}
+
+#footer li>i {
+    padding-right: 5px;
+}
+
+#footer ul {
+    padding-right: 15px;
+}
+
+#footer .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.contact_us ul>li>h3 {
+    color: rgba(235, 235, 235, 0.8);
+    padding: 10px 0;
+}
+
+.contact_us>ul>li {
+
+    color: rgba(235, 235, 235, 0.8);
+    font-size: 0.8rem;
+}
+
+.find_us .social_media {
+    margin-top: 25px !important;
+}
+
+.social_media>ul>li {
+    display: inline;
+}
+
+.social_media>ul>li:first-child a {
+    color: rgba(3, 0, 194, 0.931);
+}
+
+.social_media>ul>li:nth-child(2) a {
+    color: rgba(195, 66, 49, 0.945);
+}
+
+.social_media>ul>li:nth-child(3) a {
+    color: rgb(253, 0, 0);
+}
+
+.social_media>ul>li:nth-child(4) a {
+    color: rgba(16, 123, 247, 0.918)
+}
+
+.social_media>ul>li a:hover {
+    color: rgba(0, 0, 0, 0.877);
+}
+
+.logo_footer {
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+    transform: translateX(-35);
+    -webkit-transform: translateX(-35);
+    -moz-transform: translateX(-35);
+    -ms-transform: translateX(-35);
+    -o-transform: translateX(-35);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    color: rgba(235, 235, 235, 0.8);
+}

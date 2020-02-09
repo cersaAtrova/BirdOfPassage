@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../css/TripIdea/place_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Roboto:400,400i,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/homepage/comment_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Honeymoon </title>
+
+    <style>
+        #header {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://www.honeymoondreams.co.uk/wp-content/uploads/2018/11/Top-8-Honeymoon-Destinations-for-2020-Tailor-Made-Honeymoon-Packages-Maldives-Honeymoon-Packages-.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="img-logo">
+            <a href="../homepage/index.html"><img
+                    src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+                    alt="logo"></a>
+
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="../../html/homepage/index.html">Home</a></li>
+                <li><a href="../Travell/index.html">Travel</a></li>
+                <li><a href="tripidea_index.html">Trip Idea</a></li>
+                <li><a href="../legancylifestyle/llifestyle_index.html">Legancy Lifestyle</a></li>
+                <li><a href="../about us/about_us_index.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'">
+                        Login</a></li>
+                <li><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
+            </ul>
+        </div>
+        <script src="../../javascript/script.js"></script>
+    </div>
+    <!-- the below code i found it on w3school
+    https://www.w3schools.com/howto/howto_css_login_form.asp -->
+    <div id="id01" class="modal">
+        <form class="modal-content animate comments__form" method="POST">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img width="150px" height="150px"
+                    src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" alt="avatar">
+                    <h2 style="text-align: center;">Log In</h2>
+            </div>
+            <div class="container comments__form-info" style="width: 80%;">
+                <div class="comments__form-field">
+                    <input id="comments__form-label-name" name="author" placeholder="Name" type="text"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-name">
+                        <span class="comments__form-label-text">Name</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw1" name="password" placeholder="Password" type="password"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-psw1">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <!-- <button type="submit">Login</button> -->
+                <input name="submit" type="submit" id="submit" class="comments__form-submit" value="Login"
+                    style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1; width: 80%;">
+                <input onclick="document.getElementById('id01').style.display='none'" name="submit" type="submit"
+                    id="cancel" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                    style="width: 100%; text-align: center; border-color: brown;">
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+    <!-- end of first code -->
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="modal-content animate comments__form" method="post">
+            <div class="container comments__form-info" style="width: 80%;">
+                <h1>Create Your account</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <div class="fullname">
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-name1" name="author" placeholder="Name" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-name1">
+                            <span class="comments__form-label-text">Name</span>
+                        </label>
+                    </div>
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-surname" name="author" placeholder="Surname" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-surname">
+                            <span class="comments__form-label-text">Surname</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-email" name="password" placeholder="Enter your Email" type="email"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-email">
+                        <span class="comments__form-label-text">Email</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw" name="password" placeholder="Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-psw">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-re-psw" name="password" placeholder="Re-Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-re-psw">
+                        <span class="comments__form-label-text">Re-Password</span>
+                    </label>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <div class="fullname">
+                    <input onclick="document.getElementById('id02').style.display='none'" name="submit" type="submit"
+                        id="cnx" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                        style="width: 100%; text-align: center; border-color: brown;">
+                    <input name="submit" type="submit" id="sing_up" class="comments__form-submit signupbtn"
+                        value="Sign Up" style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+                </div>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id02');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+    <section id="header">
+        <div class="header_icon">
+            <img src="https://img.icons8.com/color/100/000000/diamond-ring.png">
+        </div>
+        <div class="header_title">
+            <h3>Honeymoon Places</h3>
+        </div>
+    </section>
+    <section class="about_trip">
+        <div class="nav_anc">
+            <a href="../homepage/index.html">
+                <h4 style="display: inline;">Home</h4>
+            </a>
+            <h4 style="display: inline;">&gt;&gt; </h4>
+            <a href="../../tripidea_index.html">
+                <h4 style="display: inline;">Trip Idea</h4>
+            </a>
+            <h4 style="display: inline;">&gt;&gt; Honeymoon</h4>
+        </div>
+        <div class="country">
+            <h2>You Looking for Honeymoon Place?</h2>
+            <p>
+                We’ve got everything you need to inspire your next great getaway, from long
+                weekend escapes in the U.S. to must-see cities in Europe to bucket-list adventures in Asia and beyond.
+                Get packing.
+            </p>
+            <p>
+                Nulla ac tellus vitae metus imperdiet volutpat. Cras in neque nulla. Vivamus molestie gravida
+                eros, vitae tempus odio lacinia eu.e. In volutpat id ante ut molestie. Aliquam non fringilla velit,
+                quis finibus sapien. Quisque leo tellus, sagittis eu nunc consequat, ultrices gravida elit. In
+                scelerisque ex eget rutrum eleifend. Etiam vitae porttitor lacus.
+            </p>
+            <div class="show " style=" display:none ; ">
+                <div class="show_flex">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat neque nec lorem
+                        dignissim cursus. Suspendisse quam ipsum, facilisis eu scelerisque sit amet, consequat ut
+                        ligula. In dapibus est a dictum placerat. Ut sed sapien lorem. Praesent blandit pellentesque
+                        massa, sit amet tincidunt tortor cursus eget. Integer dignissim cursus interdum. Duis ut commodo
+                        sem, in cursus enim. Sed sodales congue dui sed tempus.
+
+                        Pellentesque non scelerisque urna. Aenean magna mauris, egestas nec blandit eu, mollis nec eros.
+                        Curabitur quis consequat ipsum. In volutpat id ante ut molestie. Aliquam non fringilla velit,
+                        quis finibus sapien. Quisque leo tellus, sagittis eu nunc consequat, ultrices gravida elit. In
+                        scelerisque ex eget rutrum eleifend. Etiam vitae porttitor lacus.
+                    </p>
+                    <p>
+                        Nulla ac tellus vitae metus imperdiet volutpat. Cras in neque nulla. Vivamus molestie gravida
+                        eros, vitae tempus odio lacinia eu. Sed tortor dolor, gravida et lectus sed, tincidunt
+                        scelerisque libero. Mauris a efficitur mi, molestie sodales lacus. Donec eu consectetur sapien.
+                        Maecenas non metus at massa maximus iaculis in at lorem. Nulla id dui in ipsum scelerisque
+                        cursus ut sed nisl. Praesent vitae mattis risus, id dapibus augue. Mauris pulvinar elit quis
+                        lectus bibendum porta. Morbi cursus orci vitae eros sollicitudin, ac tempor ipsum sagittis.
+                        Aliquam egestas est arcu, non finibus massa aliquet quis. Etiam volutpat, lorem id fringilla
+                        hendrerit, nibh dolor malesuada dui, at feugiat eros libero sed odio.
+                    </p>
+                </div>
+            </div>
+            <div class="read" style="cursor: pointer;" onclick="show_more()">Read
+                More
+            </div>
+            <!-- The above code i dont know why is not working -->
+        </div>
+    </section>
+    <section id="place_sec">
+        <div class="place_place">
+            <div class="place_title">
+                <h2>Cyprus</h2>
+                <p>Ut vitae lectus aliquam, congue justo quis, sagittis orci. Pellentesque eu augue lobortis, imperdiet
+                    velit nec, suscipit odio. Cras quis aliquet est, ac suscipit lectus. Nunc erat sem, egestas a velit
+                    laoreet, vehicula pellentesque diam. Maecenas consequat mi id ligula rutrum dignissim. Praesent
+                    gravida
+                    vestibulum maximus. Donec accumsan congue ante a sodales. Proin semper quis lorem vel tincidunt.
+                    Maecenas laoreet eu est in posuere. Donec tempor lorem quam, et lobortis leo condimentum eget. Morbi
+                    efficitur vulputate fringilla. Vivamus in libero suscipit, dictum massa eu, pellentesque orci. Nam
+                    sit
+                    amet porttitor nulla, vel porttitor diam. Vestibulum est nisi, congue sit amet neque in, aliquet
+                    blandit
+                    arcu. Pellentesque in congue odio. Fusce a nisl sit amet enim tempus elementum a vel odio. </p>
+            </div>
+            <div class="place_1">
+                <div class="col-md-10 hover12">
+                    <div class="thumbnail city">
+                        <a href="../../html/countries/cyprus_index.html" target="_blank">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="Lights" style="width:100%">
+                            <div class="caption">
+                                <h3>Cyprus</h3>
+                                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="place_sec_2">
+        <div class="place_place">
+            <div class="place">
+                <div class="col-md-10 hover12">
+                    <div class="thumbnail city">
+                        <a href="../countries/italy_index.html" target="_blank">
+                            <img src="https://media.timeout.com/images/105237804/630/472/image.jpg" alt="Lights"
+                                style="width:100%">
+                            <div class="caption">
+                                <h3>Italy</h3>
+                                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place_title">
+                <h2>Italy</h2>
+                <p>Ut vitae lectus aliquam, congue justo quis, sagittis orci. Pellentesque eu augue lobortis, imperdiet
+                    velit nec, suscipit odio. Cras quis aliquet est, ac suscipit lectus. Nunc erat sem, egestas a velit
+                    laoreet, vehicula pellentesque diam. Maecenas consequat mi id ligula rutrum dignissim. Praesent
+                    gravida
+                    vestibulum maximus. Donec accumsan congue ante a sodales. Proin semper quis lorem vel tincidunt.
+                    Maecenas laoreet eu est in posuere. Donec tempor lorem quam, et lobortis leo condimentum eget. Morbi
+                    efficitur vulputate fringilla. Vivamus in libero suscipit, dictum massa eu, pellentesque orci. Nam
+                    sit
+                    amet porttitor nulla, vel porttitor diam. Vestibulum est nisi, congue sit amet neque in, aliquet
+                    blandit
+                    arcu. Pellentesque in congue odio. Fusce a nisl sit amet enim tempus elementum a vel odio. </p>
+            </div>
+        </div>
+    </section>
+    <section id="place_sec_3">
+        <div class="place_place">
+            <div class="place_title">
+                <h2>Indonesia</h2>
+                <p>Ut vitae lectus aliquam, congue justo quis, sagittis orci. Pellentesque eu augue lobortis, imperdiet
+                    velit nec, suscipit odio. Cras quis aliquet est, ac suscipit lectus. Nunc erat sem, egestas a velit
+                    laoreet, vehicula pellentesque diam. Maecenas consequat mi id ligula rutrum dignissim. Praesent
+                    gravida
+                    vestibulum maximus. Donec accumsan congue ante a sodales. Proin semper quis lorem vel tincidunt.
+                    Maecenas laoreet eu est in posuere. Donec tempor lorem quam, et lobortis leo condimentum eget. Morbi
+                    efficitur vulputate fringilla. Vivamus in libero suscipit, dictum massa eu, pellentesque orci. Nam
+                    sit
+                    amet porttitor nulla, vel porttitor diam. Vestibulum est nisi, congue sit amet neque in, aliquet
+                    blandit
+                    arcu. Pellentesque in congue odio. Fusce a nisl sit amet enim tempus elementum a vel odio. </p>
+            </div>
+            <div class="place">
+                <div class="col-md-10 hover12">
+                    <div class="thumbnail city">
+                        <a href="#" target="_blank">
+                            <img src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1565203035000/photosp/790a1761-14b7-41c5-8278-489b13aab1e7/stock-photo-travel-palm-tree-summer-hotel-ocean-tourism-swimming-pool-vacation-indonesia-790a1761-14b7-41c5-8278-489b13aab1e7.jpg"
+                                alt="Lights" style="width:100%">
+                            <div class="caption">
+                                <h3>Indonesia</h3>
+                                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+   Recomentation Paragraph
+    -->
+    <section class="recomentation">
+        <div class="recomendation_trip">
+            <div class="content-trip">
+                <!-- the below code i found on w3school and using bootstrap 
+                https://www.w3schools.com/bootstrap/bootstrap_images.asp
+            -->
+                <div class="container">
+                    <h2>May also you find Interest </h2>
+                    <p>Proin porttitor justo elit, id dapibus diam posuere quis.
+                    </p>
+                    <p>Duis ullamcorper dui in sem
+                        aliquam facilisis. Nulla nisi nibh,.</p>
+                    <div class="row">
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="luxury_index.html" target="_blank">
+                                    <img src="https://www.stlucianewsonline.com/wp-content/uploads/2017/03/ows-footer.jpg"
+                                        alt="Lights" style="width:100%" width="450px" height="400px">
+                                    <div class="caption">
+                                        <h3>Luxury</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="family_index.html" target="_blank">
+                                    <img src="https://www.propertyturkey.com/uploads/pages/larg/places-to-go-in-turkey-for-families.jpg"
+                                        alt="Lights" style="width:100%" width="450px" height="400px">
+                                    <div class="caption">
+                                        <h3>Family</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="romantic.html " target=" _blank">
+                                    <img src="https://portugalus.com/wp-content/uploads/2019/07/romantic.jpg"
+                                        alt="Lights" style="width:100%" width="450px" height="400px">
+                                    <div class="caption">
+                                        <h3>Romantic</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section id="footer">
+            <div class="footer_section">
+                <div class="content">
+                    <div class="contact_us" style="width: 30%;">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Contact us</h1>
+                        <ul>
+                            <li>
+                                <h3>Limasol</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>25 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 321548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@limasol.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Larnaca</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>24 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 221548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@larnaca.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Nicosia</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>22 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 121548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@nicosia.com</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="find_us" style="width: 30%;">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Find us </h1>
+                        <div class="social_media">
+                            <ul>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subscribe" style="width: 30%;">
+                        <div class="subscribe">
+                            <h1 style="color: rgba(255, 255, 255, 0.589);">Subscribe for news</h1>
+                            <form action="">
+                                <div class="comments__form-field">
+                                    <input id="comments__form-label-mail" name="author" placeholder="Enter your E-mail"
+                                        type="text" class="comments__form-input"
+                                        style="background-color: transparent; color: #fff;">
+                                    <label class="comments__form-label" for="comments__form-label-mail">
+                                        <span class="comments__form-label-text"
+                                            style="color:  rgba(255, 255, 255, 0.589);">E-mail</span>
+                                    </label>
+                                </div>
+                                <input name="submit" type="submit" id="submit" class="comments__form-submit"
+                                    value="Subscribe" style="color:#fff ;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_footer" style="margin: 50px 50px 0 -50px "><a href="../homepage/index.html">
+                        <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+                            alt="logo"></a>
+                </div>
+                <div class="copyright">&copy; copyright Bird of passage | All right reserved</div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

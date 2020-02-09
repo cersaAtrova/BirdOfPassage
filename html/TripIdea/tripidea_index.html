@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bird of Passage - Trip Idea</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Roboto:400,400i,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/TripIdea/trip_style.css">
+    <link rel="stylesheet" href="../../css/homepage/comment_style.css">
+    <link rel="stylesheet" href="../../css/homepage/slideShowStyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="img-logo">
+            <a href="../homepage/index.html"><img
+                    src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+                    alt="logo"></a>
+
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="../../html/homepage/index.html">Home</a></li>
+                <li><a href="../Travell/index.html">Travel</a></li>
+                <li><a href="tripidea_index.html">Trip Idea</a></li>
+                <li><a href="../legancylifestyle/llifestyle_index.html">Legancy Lifestyle</a></li>
+                <li><a href="../about us/about_us_index.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'">
+                        Login</a></li>
+                <li><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
+            </ul>
+        </div>
+        <script src="../../javascript/script.js"></script>
+    </div>
+
+    <!-- the below code i found it on w3school
+    https://www.w3schools.com/howto/howto_css_login_form.asp -->
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate comments__form" method="POST">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img width="150px" height="150px"
+                    src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" alt="avatar">
+                    <h2 style="text-align: center;">Log In</h2>
+            </div>
+
+            <div class="container comments__form-info" style="width: 80%;">
+                <div class="comments__form-field">
+                    <input id="comments__form-label-name" name="author" placeholder="Name" type="text"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-name">
+                        <span class="comments__form-label-text">Name</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw1" name="password" placeholder="Password" type="password"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-psw1">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <!-- <button type="submit">Login</button> -->
+                <input name="submit" type="submit" id="submit" class="comments__form-submit" value="Login"
+                    style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);" >
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1; width: 80%;">
+
+                <input onclick="document.getElementById('id01').style.display='none'" name="submit" type="submit"
+                    id="cancel" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                    style="width: 100%; text-align: center; border-color: brown;">
+
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+    <!-- end of first code -->
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="modal-content animate comments__form" method="post">
+            <div class="container comments__form-info" style="width: 80%;">
+                <h1>Create Your account</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <div class="fullname">
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-name1" name="author" placeholder="Name" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-name1">
+                            <span class="comments__form-label-text">Name</span>
+                        </label>
+                    </div>
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-surname" name="author" placeholder="Surname" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-surname">
+                            <span class="comments__form-label-text">Surname</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-email" name="password" placeholder="Enter your Email" type="email"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-email">
+                        <span class="comments__form-label-text">Email</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw" name="password" placeholder="Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-psw">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-re-psw" name="password" placeholder="Re-Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-re-psw">
+                        <span class="comments__form-label-text">Re-Password</span>
+                    </label>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="fullname">
+                    <input onclick="document.getElementById('id02').style.display='none'" name="submit" type="submit"
+                        id="cnx" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                        style="width: 100%; text-align: center; border-color: brown;">
+                    <input name="submit" type="submit" id="sing_up" class="comments__form-submit signupbtn"
+                        value="Sign Up" style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+
+                </div>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id02');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+    <!-- partial:index.partial.html -->
+    <!-- The below code i found it on code pen
+      # Slideshow Parallax with TweenMax
+     _A Pen created at CodePen.io. Original URL: [https://codepen.io/cersaatrova/pen/OJPXwyy](https://codepen.io/cersaatrova/pen/OJPXwyy).
+     -->
+    <main class="main-content">
+        <section class="slideshow">
+            <div class="slideshow-inner">
+                <div class="slides">
+                    <div class="slide is-active ">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Looking for a new desination?</div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ipsum id
+                                        massa semper feugiat. Suspendisse aliquam augue ut elit maximus, id ultrices
+                                        elit auctor. Vivamus eleifend mattis turpis, vel hendrerit lectus hendrerit sit
+                                        amet. Cras fermentum purus id enim varius, ac pharetra turpis suscipit.
+                                        <br><br>Photo by Element5 Digital on Unsplash </p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Difficult to chose?</div>
+                                <div class="text">
+                                    <p>Nullam sagittis ipsum non velit dignissim, eget varius nunc posuere. Orci varius
+                                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin
+                                        scelerisque turpis orci, eget porta ligula dictum vulputate. Aenean vestibulum
+                                        dui in tortor tincidunt congue. <br><br>Photo by Deanna Ritchie on Unsplash</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1490380169520-0a4b88d52565?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Are you ready?</div>
+                                <div class="text">
+                                    <p> Mauris sodales velit id erat fermentum, quis porttitor quam placerat. Donec
+                                        varius massa eget nunc porta, eu egestas nisi ornare. Quisque vitae porttitor
+                                        mi.
+                                        <br><br>Photo by Brandless on Unsplash</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1571942790909-75819ea24170?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+                                alt="" class="image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="item is-active">
+                        <span class="icon">1</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">2</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">3</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script src="../../javascript/slideShowScript.js"></script>
+    <section class="about_trip">
+        <div class="nav_anc">
+            <a href="../homepage/index.html">
+                <h4 style="display: inline;">Home</h4>
+            </a>
+            &gt;&gt; <h4 style="display: inline;">Trip Idea</h4>
+        </div>
+        <div class="country">
+            <h2>Where do you want to go?</h2>
+            <p>
+                Not sure where to go next? We’ve got everything you need to inspire your next great getaway, from long
+                weekend escapes in the U.S. to must-see cities in Europe to bucket-list adventures in Asia and beyond.
+                Get packing.
+            </p>
+            <p>
+                Nulla ac tellus vitae metus imperdiet volutpat. Cras in neque nulla. Vivamus molestie gravida
+                eros, vitae tempus odio lacinia eu.e. In volutpat id ante ut molestie. Aliquam non fringilla velit,
+                quis finibus sapien. Quisque leo tellus, sagittis eu nunc consequat, ultrices gravida elit. In
+                scelerisque ex eget rutrum eleifend. Etiam vitae porttitor lacus.
+            </p>
+
+            <div class="show " style=" display:none ; ">
+                <span class="show_flex">
+                    <span style="display: inline-block;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat neque nec lorem
+                        dignissim cursus. Suspendisse quam ipsum, facilisis eu scelerisque sit amet, consequat ut
+                        ligula. In dapibus est a dictum placerat. Ut sed sapien lorem. Praesent blandit pellentesque
+                        massa, sit amet tincidunt tortor cursus eget. Integer dignissim cursus interdum. Duis ut commodo
+                        sem, in cursus enim. Sed sodales congue dui sed tempus.
+
+                        Pellentesque non scelerisque urna. Aenean magna mauris, egestas nec blandit eu, mollis nec eros.
+                        Curabitur quis consequat ipsum. In volutpat id ante ut molestie. Aliquam non fringilla velit,
+                        quis finibus sapien. Quisque leo tellus, sagittis eu nunc consequat, ultrices gravida elit. In
+                        scelerisque ex eget rutrum eleifend. Etiam vitae porttitor lacus.
+                    </span>
+                    <span style="display: inline-block;">
+                        Nulla ac tellus vitae metus imperdiet volutpat. Cras in neque nulla. Vivamus molestie gravida
+                        eros, vitae tempus odio lacinia eu. Sed tortor dolor, gravida et lectus sed, tincidunt
+                        scelerisque libero. Mauris a efficitur mi, molestie sodales lacus. Donec eu consectetur sapien.
+                        Maecenas non metus at massa maximus iaculis in at lorem. Nulla id dui in ipsum scelerisque
+                        cursus ut sed nisl. Praesent vitae mattis risus, id dapibus augue. Mauris pulvinar elit quis
+                        lectus bibendum porta. Morbi cursus orci vitae eros sollicitudin, ac tempor ipsum sagittis.
+                        Aliquam egestas est arcu, non finibus massa aliquet quis. Etiam volutpat, lorem id fringilla
+                        hendrerit, nibh dolor malesuada dui, at feugiat eros libero sed odio.
+                    </span>
+                </span>
+            </div>
+            <div class="read" style="cursor: pointer;" onclick="show_more()">Read
+                More
+            </div>
+            <!-- The above code i dont know why is not working -->
+        </div>
+    </section>
+    <section id="honeymoon_sec">
+        <div class="sec_container">
+            <div class="sec_title">
+                <h2>Honeymoon</h2>
+                <p>Ut vitae lectus aliquam, congue justo quis, sagittis orci. Pellentesque eu augue lobortis, imperdiet
+                    velit nec, suscipit odio. Cras quis aliquet est, ac suscipit lectus. Nunc erat sem, egestas a velit
+                    laoreet, vehicula pellentesque diam. Maecenas consequat mi id ligula rutrum dignissim. Praesent
+                    gravida
+                    vestibulum maximus. Donec accumsan congue ante a sodales. Proin semper quis lorem vel tincidunt.
+                    Maecenas laoreet eu est in posuere. Donec tempor lorem quam, et lobortis leo condimentum eget. Morbi
+                    efficitur vulputate fringilla. Vivamus in libero suscipit, dictum massa eu, pellentesque orci. Nam
+                    sit
+                    amet porttitor nulla, vel porttitor diam. Vestibulum est nisi, congue sit amet neque in, aliquet
+                    blandit
+                    arcu. Pellentesque in congue odio. Fusce a nisl sit amet enim tempus elementum a vel odio. </p>
+                <div style="background: rgb(167, 43, 43); width: max-content;">
+                    <a href="honeymoon.html" class="btn">
+                        <span class="btn-inner">Learn More</span>
+                    </a>
+                </div>
+            </div>
+            <div class="sec_img">
+                <img src="https://i.pinimg.com/600x315/e1/8f/a3/e18fa37f18cfaedc492ea6e32062da3a.jpg"
+                    alt="bed with flower on top on shape hearth" width="500px" height="600px">
+            </div>
+        </div>
+    </section>
+
+    <!-- romantic place -->
+    <section id="romantic_sec">
+        <div class="sec_container">
+            <div class="sec_title">
+                <h2>Romantic</h2>
+                <p>Ut vitae lectus aliquam, congue justo quis, sagittis orci. Pellentesque eu augue lobortis, imperdiet
+                    velit nec, suscipit odio. Cras quis aliquet est, ac suscipit lectus. Nunc erat sem, egestas a velit
+                    laoreet, vehicula pellentesque diam. Maecenas consequat mi id ligula rutrum dignissim. Praesent
+                    gravida
+                    vestibulum maximus. Donec accumsan congue ante a sodales. Proin semper quis lorem vel tincidunt.
+                    Maecenas laoreet eu est in posuere. Donec tempor lorem quam, et lobortis leo condimentum eget. Morbi
+                    efficitur vulputate fringilla. Vivamus in libero suscipit, dictum massa eu, pellentesque orci. Nam
+                    sit
+                    amet porttitor nulla, vel porttitor diam. Vestibulum est nisi, congue sit amet neque in, aliquet
+                    blandit
+                    arcu. Pellentesque in congue odio. Fusce a nisl sit amet enim tempus elementum a vel odio. </p>
+                <div style="background: rgb(167, 43, 43); width: max-content;">
+                    <a href="romantic.html" class="btn">
+                        <span class="btn-inner">Learn More</span>
+                    </a>
+                </div>
+            </div>
+            <div class="romantic_img">
+                <img src="https://www.ndtvx.com/wp-content/uploads/2019/04/shutterstock_1249526061.jpg"
+                    alt="2 people sit on sands with arround candle on shape heart" width="500px" height="600px">
+            </div>
+        </div>
+    </section>
+    <!-- family section -->
+    <section id="family_sec">
+        <div class="sec_container">
+            <div class="sec_title">
+                <h2>Family Time</h2>
+                <p>Ut vitae lectus aliquam, congue justo quis, sagittis orci. Pellentesque eu augue lobortis, imperdiet
+                    velit nec, suscipit odio. Cras quis aliquet est, ac suscipit lectus. Nunc erat sem, egestas a velit
+                    laoreet, vehicula pellentesque diam. Maecenas consequat mi id ligula rutrum dignissim. Praesent
+                    gravida
+                    vestibulum maximus. Donec accumsan congue ante a sodales. Proin semper quis lorem vel tincidunt.
+                    Maecenas laoreet eu est in posuere. Donec tempor lorem quam, et lobortis leo condimentum eget. Morbi
+                    efficitur vulputate fringilla. Vivamus in libero suscipit, dictum massa eu, pellentesque orci. Nam
+                    sit
+                    amet porttitor nulla, vel porttitor diam. Vestibulum est nisi, congue sit amet neque in, aliquet
+                    blandit
+                    arcu. Pellentesque in congue odio. Fusce a nisl sit amet enim tempus elementum a vel odio. </p>
+                <div style="background: rgb(167, 43, 43); width: max-content;">
+                    <a href="family_index.html" class="btn">
+                        <span class="btn-inner">Learn More</span>
+                    </a>
+                </div>
+            </div>
+            <div class="romantic_img">
+                <img src="https://stylish-travel.com/wp-content/uploads/2017/09/family-holiday.jpg"
+                    alt=" 2 people sit on sands with their children" width="500px" height="600px">
+            </div>
+        </div>
+    </section>
+
+    <section id="luxury_sec">
+        <div class="sec_container">
+            <div class="sec_title">
+                <h2>Luxury</h2>
+                <p>Ut vitae lectus aliquam, congue justo quis, sagittis orci. Pellentesque eu augue lobortis, imperdiet
+                    velit nec, suscipit odio. Cras quis aliquet est, ac suscipit lectus. Nunc erat sem, egestas a velit
+                    laoreet, vehicula pellentesque diam. Maecenas consequat mi id ligula rutrum dignissim. Praesent
+                    gravida
+                    vestibulum maximus. Donec accumsan congue ante a sodales. Proin semper quis lorem vel tincidunt.
+                    Maecenas laoreet eu est in posuere. Donec tempor lorem quam, et lobortis leo condimentum eget. Morbi
+                    efficitur vulputate fringilla. Vivamus in libero suscipit, dictum massa eu, pellentesque orci. Nam
+                    sit
+                    amet porttitor nulla, vel porttitor diam. Vestibulum est nisi, congue sit amet neque in, aliquet
+                    blandit
+                    arcu. Pellentesque in congue odio. Fusce a nisl sit amet enim tempus elementum a vel odio. </p>
+                <div style="background: rgb(167, 43, 43); width: max-content;">
+                    <a href="luxury_index.html" class="btn">
+                        <span class="btn-inner">Learn More</span>
+                    </a>
+                </div>
+            </div>
+            <div class="romantic_img">
+                <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/117/117759779.jpg"
+                    alt=" 2 people sit on sands with their children" width="500px" height="600px">
+            </div>
+        </div>
+    </section>
+    <!-- comment page -->
+    <section class="comments_prg">
+        <div class="comment-content">
+            <!-- partial:index.partial.html -->
+            <div class="comments">
+                <div class="frm_comment_">
+                    <h2 style="font-size: 2.5rem; color: #181a2b;">Leave a comment</h2>
+
+                    <form class="comments__form">
+                        <div class="comments__form-info">
+
+                            <div class="comments__form-field">
+                                <input id="comments__form-label-name" name="author" placeholder="Name" type="text"
+                                    class="comments__form-input">
+                                <label class="comments__form-label" for="comments__form-label-name">
+                                    <span class="comments__form-label-text">Name</span>
+                                </label>
+                            </div>
+
+                            <div class="comments__form-field">
+                                <input id="comments__form-label-mail" name="author" placeholder="E-mail" type="text"
+                                    class="comments__form-input">
+                                <label class="comments__form-label" for="comments__form-label-mail">
+                                    <span class="comments__form-label-text">E-mail</span>
+                                </label>
+                            </div>
+
+                            <div class="comments__form-field">
+                                <input id="comments__form-label-site" name="author" placeholder="Website" type="text"
+                                    class="comments__form-input">
+                                <label class="comments__form-label" for="comments__form-label-site">
+                                    <span class="comments__form-label-text">Website</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="comments__form-text">
+
+                            <div class="comments__form-field">
+                                <textarea id="comments__form-label-text" name="author"
+                                    placeholder="Express your thoughts"
+                                    class="comments__form-input comments__form-textarea"></textarea>
+                                <label class="comments__form-label" for="comments__form-label-text">
+                                    <span class="comments__form-label-text">Express your thoughts</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input name="submit" type="submit" id="submit" class="comments__form-submit"
+                            value="Post Comment">
+                    </form>
+                </div>
+                <div class="comments__list">
+                    <h2 style="font-size: 2.5rem; color: #181a2b;">Most Relevant Comment</h2>
+                    <div class="relevant_comment">
+                        <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Pipina - 23/01/2019</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="relevant_comment">
+                        <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Hatzipamias 22/05/2019</h3>
+                        <p>Nam fermentum, velit aliquet facilisis vulputate, ex ante pretium nibh, eu suscipit
+                            <span class="show" style=" display:none; ">lorem justo et nunc. Nunc eget scelerisque
+                                mauris. Quisque
+                                posuere, tellus sit amet ornare
+                                dignissim, dolor felis scelerisque urna, ornare venenatis dui felis id tortor.</span>
+                        </p>
+                        <div class="read" style="cursor: pointer;" onclick="show_more()">Show
+                            More</div>
+
+                    </div>
+                    <div class="relevant_comment">
+                        <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Peklivanis</h3>
+                        <p>Nam dapibus arcu non magna sodales condimentum. In volutpat nunc et nunc dapibus, feugiat
+                            tincidunt
+                            lacus
+                            sollicitudin.</p>
+                    </div>
+                </div>
+    </section>
+    <!-- footer page -->
+    <footer>
+        <section id="footer">
+            <div class="footer_section">
+                <div class="content">
+                    <div class="contact_us" style="width: 30%;">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Contact us</h1>
+                        <ul>
+                            <li>
+                                <h3>Limasol</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>25 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 321548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@limasol.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Larnaca</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>24 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 221548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@larnaca.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Nicosia</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>22 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 121548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@nicosia.com</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="find_us" style="width: 30%;">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Find us </h1>
+                        <div class="social_media">
+                            <ul>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="subscribe" style="width: 30%;">
+                        <div class="subscribe">
+                            <h1 style="color: rgba(255, 255, 255, 0.589);">Subscribe for news</h1>
+                            <form action="">
+                                <div class="comments__form-field">
+                                    <input id="comments__form-label-mail_1" name="author" placeholder="Enter your E-mail"
+                                        type="text" class="comments__form-input"
+                                        style="background-color: transparent; color: #fff;">
+                                    <label class="comments__form-label" for="comments__form-label-mail_1">
+                                        <span class="comments__form-label-text"
+                                            style="color:  rgba(255, 255, 255, 0.589);">E-mail</span>
+                                    </label>
+
+                                </div>
+                                <input name="submit" type="submit" id="submit" class="comments__form-submit"
+                                    value="Subscribe" style="color:#fff ;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_footer" style="margin: 50px 50px 0 -50px "><a href="../homepage/index.html">
+                        <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+                            alt="logo"></a>
+
+                </div>
+                <div class="copyright">&copy; copyright Bird of passage | All right reserved</div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

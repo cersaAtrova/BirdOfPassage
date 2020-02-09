@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>France</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Roboto:400,400i,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/countries/country_style.css">
+    <link rel="stylesheet" href="../../css/homepage/comment_style.css">
+    <link rel="stylesheet" href="../../css/homepage/slideShowStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="img-logo">
+            <a href="../../html/homepage/index.html"><img
+                    src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+                    alt="logo"></a>
+
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="../homepage/index.html">Home</a></li>
+                <li><a href="../Travell/index.html">Travel</a></li>
+                <li><a href="../TripIdea/tripidea_index.html">Trip Idea</a></li>
+                <li><a href="../legancylifestyle/llifestyle_index.html">Legancy Lifestyle</a></li>
+                <li><a href="../about us/about_us_index.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'">
+                        Login</a></li>
+                <li><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
+            </ul>
+        </div>
+        <script src="../../javascript/script.js"></script>
+    </div>
+
+    <!-- the below code i found it on w3school
+    https://www.w3schools.com/howto/howto_css_login_form.asp -->
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate comments__form" method="POST">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img width="150px" height="150px"
+                    src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" alt="avatar">
+                    <h2 style="text-align: center;">Log In</h2>
+            </div>
+
+            <div class="container comments__form-info" style="width: 80%;">
+                <div class="comments__form-field">
+                    <input id="comments__form-label-name" name="author" placeholder="Name" type="text"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-name">
+                        <span class="comments__form-label-text">Name</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw1" name="password" placeholder="Password" type="password"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-psw1">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <!-- <button type="submit">Login</button> -->
+                <input name="submit" type="submit" id="submit" class="comments__form-submit" value="Login"
+                    style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1; width: 80%;">
+
+                <input onclick="document.getElementById('id01').style.display='none'" name="submit" type="submit"
+                    id="cancel" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                    style="width: 100%; text-align: center; border-color: brown;">
+
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+
+
+    <!-- end of first code -->
+
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="modal-content animate comments__form" method="post">
+            <div class="container comments__form-info" style="width: 80%;">
+                <h1>Create Your account</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <div class="fullname">
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-name1" name="author" placeholder="Name" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-name1">
+                            <span class="comments__form-label-text">Name</span>
+                        </label>
+                    </div>
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-surname" name="author" placeholder="Surname" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-surname">
+                            <span class="comments__form-label-text">Surname</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-email" name="password" placeholder="Enter your Email" type="email"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-email">
+                        <span class="comments__form-label-text">Email</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw" name="password" placeholder="Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-psw">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-re-psw" name="password" placeholder="Re-Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-re-psw">
+                        <span class="comments__form-label-text">Re-Password</span>
+                    </label>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="fullname">
+                    <input onclick="document.getElementById('id02').style.display='none'" name="submit" type="submit"
+                        id="cnx" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                        style="width: 100%; text-align: center; border-color: brown;">
+                    <input name="submit" type="submit" id="sing_up" class="comments__form-submit signupbtn"
+                        value="Sign Up" style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+
+                </div>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id02');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+    <!-- partial:index.partial.html -->
+    <!-- The below code i found it on code pen
+          # Slideshow Parallax with TweenMax
+         _A Pen created at CodePen.io. Original URL: [https://codepen.io/cersaatrova/pen/OJPXwyy](https://codepen.io/cersaatrova/pen/OJPXwyy).
+         -->
+    <main class="main-content">
+        <section class="slideshow">
+            <div class="slideshow-inner">
+                <div class="slides">
+                    <div class="slide is-active ">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Eiffel tower</div>
+                                <div class="text">
+                                    <p>Sed ultrices laoreet sem quis imperdiet. In hac habitasse platea dictumst. Nam
+                                        tellus nisl, sodales vulputate consectetur vel, lobortis quis justo. Duis
+                                        aucibus felis sed mauris maximus cursus.. <br><br>Photo by Léonard Cotte on
+                                        Unsplash</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1493707553966-283afac8c358?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                alt="Aifel" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Paris</div>
+                                <div class="text">
+                                    <p>Cras eu fermentum dui. Pellentesque imperdiet metus non felis consequat aliquam.
+                                        In magna lorem, posuere id laoreet eget, auctor non magna. Ut lobortis turpis et
+                                        dolor lobortis vestibulum. Pellentesque id efficitur metus. Vivamus elementum
+                                        orci ut erat pharetra, non ultricies felis rutrum. Aliquam erat volutpat. </p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1503248739195-65669aaf5b0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1210&q=80"
+                                alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Marseille</div>
+                                <div class="text">
+                                    <p> Suspendisse hendrerit nunc tortor, non auctor nisi blandit aliquam. In placerat
+                                        pretium orci quis elementum. Donec eget consequat enim, a placerat lorem.
+                                        Pellentesque ac dolor nisi. In hac habitasse platea dictumst. Vivamus semper
+                                        purus a vehicula tempus. Suspendisse tempus, lacus vel consectetur eleifend, mi
+                                        orci sodales eros, dapibus interdum urna velit in lectus. Donec sapien nisl,
+                                        tristique vel bibendum a, finibus eleifend ex. Quisque luctus purus id dolor
+                                        placerat lobortis. Donec id nunc in quam tincidunt porttitor. Ut non magna
+                                        neque. Vestibulum ac varius nisl.
+                                        <br><br>Photo by Timo Volz on Unsplash</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://lp-cms-production.imgix.net/2019-06/GettyImages-160292245_medium.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4"
+                                alt="Lyon" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Bridge during night time </div>
+                                <div class="text">
+                                    <p>Suspendisse sit amet faucibus nisi. Sed fermentum orci sit amet purus pulvinar
+                                        consectetur. Maecenas nec maximus sapien. Nunc quis tincidunt ipsum. Praesent ut
+                                        odio sit amet erat rutrum hendrerit. Morbi vestibulum dapibus consequat.
+                                        Praesent euismod dui sed aliquet finibus. <br><br>Photo by Léonard Cotte on
+                                        Unsplash</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1307&q=80"
+                                alt="limoges" class="image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="item is-active">
+                        <span class="icon">1</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">2</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">3</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">4</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script src="../../javascript/slideShowScript.js"></script>
+
+    <section class="about_country">
+        <div>
+            <a href="../Travell/index.html">
+                <h4 style="display: inline;">Travel</h4>
+            </a> &gt;&gt; <h4 style="display: inline;">France</h4>
+        </div>
+        <div class="country">
+            <h2>About France</h2>
+            <p> Sed eros lorem, lobortis nec leo nec, venenatis mollis tortor. Cras at varius metus. Morbi at nisl vitae
+                sapien auctor commodo sed non urna. Duis facilisis lobortis tristique. Maecenas sit amet varius felis.
+                Pellentesque eget sodales eros. Integer sagittis nibh in tempus euismod. Nulla mollis faucibus tortor.
+                Morbi id feugiat quam, at elementum odio. Nunc a cursus libero. Pellentesque habitant morbi tristique
+                senectus et netus et malesuada fames ac turpis egestas. Curabitur sit amet odio leo. Cras efficitur odio
+                quis dapibus malesuada.
+
+
+            </p>
+            <p>Suspendisse in dictum dui, in maximus dolor. Donec tincidunt elit eget eleifend congue. Donec congue
+                dignissim diam, aliquam aliquam eros pharetra malesuada. Vestibulum tincidunt magna vel lectus aliquet,
+                nec maximus lacus pulvinar. Nunc suscipit dapibus dolor et finibus. Vestibulum eu lacus ut elit rhoncus
+                auctor. Nunc mi ante, pretium nec ante vel, lacinia scelerisque sapien. Maecenas arcu sem, pharetra a
+                condimentum eu, facilisis et risus. Maecenas nec gravida magna. Pellentesque mattis viverra nisl sed
+                convallis. Donec diam elit, finibus sit amet nisi in, gravida porta risus. Donec vel ante nunc. Quisque
+                ante nisi, imperdiet at sapien vitae, ultrices consectetur erat. Suspendisse potenti. .</p>
+            <p>
+                The inhabitants of Cyprus are ranked according to their origin, language, cultural tradition and
+                religion in one of the two communities provided by Article 2 of the Constitution of the Republic of
+                Cyprus, either Greek or Turkish. The majority of Cypriot residents today, including the three recognized
+                religious groups of the Maronites, Armenians and Latins (Catholics), are 78% of the Greek community.
+                There are also a large number of foreign citizens living in Cyprus, who at the end of 2011, according to
+                the official census, accounted for 21.4% of its population.
+            </p>
+            <p>Aenean consequat luctus ornare. In venenatis feugiat elit eu pharetra. Integer feugiat sapien nibh,
+                cursus auctor enim feugiat a. Integer maximus eleifend tortor, ut sagittis nisl vehicula sit amet.
+                Aliquam sem magna, luctus a vulputate ut, semper et purus. In pretium orci quis consequat porttitor.
+                Morbi sit amet consequat urna, eu scelerisque dolor. Nunc placerat velit nibh, id egestas mauris finibus
+                sit amet. Etiam euismod odio ac molestie dapibus. Donec consectetur consectetur orci, eget placerat sem
+                consequat eu. Aenean sit amet vehicula ligula. Fusce molestie eget urna ut tincidunt. Morbi blandit
+                sapien mi, sed molestie urna aliquam sit amet. Nulla molestie orci et neque sollicitudin, suscipit
+                laoreet risus porta</p>
+        </div>
+    </section>
+    <section id="attraction">
+        <div class="attraction_title">
+            <h2>Top Attraction</h2>
+            <p>Ut vitae lectus aliquam, congue justo quis, sagittis orci. Pellentesque eu augue lobortis, imperdiet
+                velit nec, suscipit odio. Cras quis aliquet est, ac suscipit lectus. Nunc erat sem, egestas a velit
+                laoreet, vehicula pellentesque diam. Maecenas consequat mi id ligula rutrum dignissim. Praesent gravida
+                vestibulum maximus. Donec accumsan congue ante a sodales. Proin semper quis lorem vel tincidunt.
+                Maecenas laoreet eu est in posuere. Donec tempor lorem quam, et lobortis leo condimentum eget. Morbi
+                efficitur vulputate fringilla. Vivamus in libero suscipit, dictum massa eu, pellentesque orci. Nam sit
+                amet porttitor nulla, vel porttitor diam. Vestibulum est nisi, congue sit amet neque in, aliquet blandit
+                arcu. Pellentesque in congue odio. Fusce a nisl sit amet enim tempus elementum a vel odio. </p>
+        </div>
+        <div class="attraction_city">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_450,w_400/v1577455143/Images/countrys/france/photo-1542033042563-62f6c93287b1_nijrrt.jpg"
+                            alt="Lights" style="width:100%" width="400px" height="450">
+                        <div class="caption">
+                            <h3>Eiffel tower</h3>
+                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="thumbnail ">
+                        <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_450,w_400/v1577455160/Images/countrys/france/photo-1493564738392-d148cfbd6eda_i4idz1.jpg"
+                            alt="Lights" style="width:100%" width="400px" height="450">
+                        <div class="caption">
+                            <h3>Bordeaux</h3>
+                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail ">
+                        <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_450,w_400/v1577455128/Images/countrys/france/photo-1454430690613-c5fbdb397f65_b2jr2f.jpg"
+                            alt="Lights" style="width:100%" width="400px" height="450">
+                        <div class="caption">
+                            <h3>Arc de Triomphe</h3>
+                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="comment">
+        <div class="content_comment">
+            <blockquote>
+                <h1>&OpenCurlyDoubleQuote;If you've spent years dreaming of making the trip, review the reasons to visit
+                    <span style="font-size: 1.5em; color: #feafaa;">France</span> and book your ticket
+                    now!.&CloseCurlyDoubleQuote;</h1>
+            </blockquote>
+        </div>
+
+    </section>
+
+    <Section class="place_to_stay">
+        <div class="content_place_to_stay">
+            <div class="place_title">
+                <h2>Top Place To Stay</h2>
+                <p>Ut vitae lectus aliquam, congue justo quis, sagittis orci. Pellentesque eu augue lobortis, imperdiet
+                    velit nec, suscipit odio. Cras quis aliquet est, ac suscipit lectus. Nunc erat sem, egestas a velit
+                    laoreet, vehicula pellentesque diam. Maecenas consequat mi id ligula rutrum dignissim. Praesent
+                    gravida
+                    vestibulum maximus. Donec accumsan congue ante a sodales. Proin semper quis lorem vel tincidunt.
+                    Maecenas laoreet eu est in posuere. Donec tempor lorem quam, et lobortis leo condimentum eget. Morbi
+                    efficitur vulputate fringilla. Vivamus in libero suscipit, dictum massa eu, pellentesque orci. Nam
+                    sit
+                    amet porttitor nulla, vel porttitor diam. Vestibulum est nisi, congue sit amet neque in, aliquet
+                    blandit
+                    arcu. Pellentesque in congue odio. Fusce a nisl sit amet enim tempus elementum a vel odio. </p>
+            </div>
+        </div>
+        <div class="place_hotels">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive"
+                            src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_400,w_450/v1577457845/Images/countrys/france/1527776016_000_Q38MD_rfalkd.jpg"
+                            alt=" Hotel paris">
+                        <div class="overlay">
+                            <h3 style="font-size: 1rem;">Hotel de Crillon</h3>
+                            <p><a style="font-size: 0.8rem;"
+                                    href="hhttps://www.lareserve-paris.com/en/?utm_source=google&utm_medium=local&utm_campaign=la-reserve-paris">Read
+                                    More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive"
+                            src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_400,w_450/v1577458032/Images/countrys/france/1527775194_000_Par6360357_rdkguk.jpg"
+                            alt="Mandarin Oriental">
+                        <div class="overlay">
+                            <h3 style="font-size: 1rem;">Mandarin Oriental</h3>
+                            <p><a style="font-size: 0.8rem;" href="https://www.mandarinoriental.com/">Read More</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive"
+                            src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_400,w_450/v1577457234/Images/countrys/france/plaza-athenee-restaurant_d7ut6z.jpg"
+                            alt="Hotel Plaza Athénée ">
+                        <div class="overlay">
+                            <h3 style="font-size: 1rem;">Hotel Plaza Athénée</h3>
+                            <p><a style="font-size: 0.8rem;"
+                                    href="https://www.dorchestercollection.com/fr/paris/hotel-plaza-athenee/restaurants-bars/petits-dejeuners-et-brunchs/">Read
+                                    More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive"
+                            src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_400,w_450/v1577457782/Images/countrys/france/1527775984_reserve.hotel_mjo9ga.jpg"
+                            alt="La Réserve Paris Hotel & Spa">
+                        <div class="overlay">
+                            <h3 style="font-size: 1rem;">La Réserve Paris Hotel & Spa</h3>
+                            <p><a href="https://www.belmond.com/hotels/europe/italy/amalfi-coast/belmond-hotel-caruso/?utm_source=local_search&utm_medium=link&utm_campaign=google_business"
+                                    style="font-size: 0.8rem;">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </Section>
+
+    <!-- Food and calture -->
+
+    <section class="comment">
+        <div class="food_delicacy">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 30%;">
+                <div class="hovereffect">
+                    <img class="img-responsive"
+                        src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_350,w_400/v1577458753/Images/countrys/france/5540dc056bb3f7cd5be17be0_pmrvbm.jpg"
+                        alt="stifado">
+                    <div class="overlay">
+                        <h3>Boeuf Bourguignon</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 30%;">
+                <blockquote>
+                    <h3>France is known for many things — its beautiful language, charming towns, and gorgeous beaches.
+
+                        While these are all true, the country's cuisine is not to be forgotten.
+
+                        Whether it's a simple croissant or a classic dish like escargot, French food always has a
+                        gourmet feel to it.</h3>
+                </blockquote>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 30%;">
+                <div class="hovereffect">
+                    <img class="img-responsive"
+                        src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_350,w_400/v1577458721/Images/countrys/france/5540e3226bb3f7dc76e17bde_ry6ag9.jpg"
+                        alt="Speggetti Carbonara">
+                    <div class="overlay">
+                        <h3>Riec-sur-Belon</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comment" style="padding-top: 0;">
+        <div class="food_delicacy">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 30%;">
+                <div class="hovereffect">
+                    <img class="img-responsive"
+                        src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_350,w_400/v1577458691/Images/countrys/france/55a539aceab8ea9e1c760d99_ktyvtj.jpg"
+                        alt="Lazania">
+                    <div class="overlay">
+                        <h3>Escargot</h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 30%;">
+                <div class="hovereffect">
+                    <img class="img-responsive"
+                        src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_350,w_400/v1577458634/Images/countrys/france/55411f866bb3f7a071e17bdf_jyfhdl.jpg"
+                        alt="Grilled Halloumi">
+                    <div class="overlay">
+                        <h3>Steak tartare</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 30%;">
+                <div class="hovereffect">
+                    <img class="img-responsive"
+                        src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_350,w_400/v1577459426/Images/countrys/france/55a536a469bedd806309cb5d_dkbvnq.jpg"
+                        alt="Rissoto">
+                    <div class="overlay">
+                        <h3> Le Relais de l'Entrecote</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-center m-auto">
+                    <h2><span>Our Gallery</span></h2>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="data:image/jpeg;base64,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"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReOx2sbeUohjtsVMyTeRWwoNHXAHZFvdI-nzaxjXJu3eaHtARl"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSh8SFtZoZAIt_leXkay2pCAS4mq7XpysSUxvHsGQQGYtB33bcs"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4oX5H3rs7_k3AUORDgIKAjk-4unFjIJ3H-gfM7bgvILD5t7Mr"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLP_n94xTGO6MYVx9XMyd0XfIlAkRQqjPe9rV8Y04kT_zm1Hdn"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRg0x3EEo5N3SWAW23PF01AVYY_7h6hFDT04oV8Mo8Z3rLBI_i0"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcST8xcsaA7AO6fZbaVsXL0nNdrJkq5XCeeX59V33kR_l_cgcg_P"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCFlmzP5rjKdBrJXO9HT8L5YKLQg-Z5aqjgFnyvLRUuGdBLnWt"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTK-7JZdUeZIrWQuVTHo5B_ptRV6rsTM7BM75RwQnbyvMc5FQJu"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section for comment and the relevant message -->
+    <section class="comments_prg">
+        <div class="comment-content">
+            <!-- partial:index.partial.html -->
+            <div class="comments">
+                <div class="frm_comment_">
+                    <h2 style="font-size: 2.5rem; color: #181a2b;">Leave a comment</h2>
+
+                    <form class="comments__form">
+                        <div class="comments__form-info">
+
+                            <div class="comments__form-field">
+                                <input id="comments__form-label-name_1" name="author" placeholder="Name" type="text"
+                                    class="comments__form-input">
+                                <label class="comments__form-label" for="comments__form-label-name_1">
+                                    <span class="comments__form-label-text">Name</span>
+                                </label>
+                            </div>
+
+                            <div class="comments__form-field">
+                                <input id="comments__form-label-mail" name="author" placeholder="E-mail" type="text"
+                                    class="comments__form-input">
+                                <label class="comments__form-label" for="comments__form-label-mail">
+                                    <span class="comments__form-label-text">E-mail</span>
+                                </label>
+                            </div>
+
+                            <div class="comments__form-field">
+                                <input id="comments__form-label-site" name="author" placeholder="Website" type="text"
+                                    class="comments__form-input">
+                                <label class="comments__form-label" for="comments__form-label-site">
+                                    <span class="comments__form-label-text">Website</span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="comments__form-text">
+
+                            <div class="comments__form-field">
+                                <textarea id="comments__form-label-text" name="author"
+                                    placeholder="Express your thoughts"
+                                    class="comments__form-input comments__form-textarea"></textarea>
+                                <label class="comments__form-label" for="comments__form-label-text">
+                                    <span class="comments__form-label-text">Express your thoughts</span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <input name="submit" type="submit"  class="comments__form-submit"
+                            value="Post Comment">
+                    </form>
+                </div>
+                <div class="comments__list">
+                    <h2 style="font-size: 2.5rem; color: #181a2b;">Most Relevant Comment</h2>
+                    <div class="relevant_comment">
+                        <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Pipina - 23/01/2019</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="relevant_comment">
+                        <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Hatzipamias 22/05/2019</h3>
+                        <p>Nam fermentum, velit aliquet facilisis vulputate, ex ante pretium nibh, eu suscipit
+                            <span class="show" style=" display:none; ">lorem justo et nunc. Nunc eget scelerisque
+                                mauris. Quisque
+                                posuere, tellus sit amet ornare
+                                dignissim, dolor felis scelerisque urna, ornare venenatis dui felis id tortor.</span>
+                        </p>
+                        <div class="read" style="cursor: pointer;" onclick="show_more()">Show
+                            More</div>
+
+                    </div>
+                    <div class="relevant_comment">
+                        <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Peklivanis</h3>
+                        <p>Nam dapibus arcu non magna sodales condimentum. In volutpat nunc et nunc dapibus, feugiat
+                            tincidunt
+                            lacus
+                            sollicitudin.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section id="footer">
+            <div class="footer_section">
+                <div class="content">
+                    <div class="contact_us" style="width: 30%;">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Contact us</h1>
+                        <ul>
+                            <li>
+                                <h3>Limasol</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>25 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 321548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@limasol.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Larnaca</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>24 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 221548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@larnaca.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Nicosia</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>22 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 121548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@nicosia.com</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="find_us" style="width: 30%;">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Find us </h1>
+                        <div class="social_media">
+                            <ul>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="subscribe" style="width: 30%;">
+                        <div class="subscribe">
+                            <h1 style="color: rgba(255, 255, 255, 0.589);">Subscribe for news</h1>
+                            <form action="#">
+                                <div class="comments__form-field">
+                                    <input id="comments__form-label-mail_2" name="author" placeholder="Enter your E-mail"
+                                        type="text" class="comments__form-input"
+                                        style="background-color: transparent; color: #fff;">
+                                    <label class="comments__form-label" for="comments__form-label-mail_2">
+                                        <span class="comments__form-label-text"
+                                            style="color:  rgba(255, 255, 255, 0.589);">E-mail</span>
+                                    </label>
+
+                                </div>
+                                <input name="submit" type="submit"  class="comments__form-submit"
+                                    value="Subscribe" style="color:#fff ;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_footer" style="margin: 50px 50px 0 -50px "><a href="#">
+                        <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+                            alt="logo"></a>
+
+                </div>
+                <div class="copyright">&copy; copyright Bird of passage | All right reserved</div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

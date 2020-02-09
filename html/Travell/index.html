@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bird of Passage - Travel Countries</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Roboto:400,400i,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/travell/travel_style.css">
+    <link rel="stylesheet" href="../../css/homepage/comment_style.css">
+    <link rel="stylesheet" href="../../css/homepage/slideShowStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="img-logo">
+            <a href="../homepage/index.html"><img
+                    src="https://res.cloudinary.com/sotiris/image/upload/v1577224087/Images/logo_euztxp.png"
+                    alt="logo"></a>
+
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="../homepage/index.html">Home</a></li>
+                <li class="border-box"><a href="index.html">Travel</a></li>
+                <li><a href="../TripIdea/tripidea_index.html">Trip Idea</a></li>
+                <li><a href="../legancylifestyle/llifestyle_index.html">Legancy Lifestyle</a></li>
+                <li><a href="../about us/about_us_index.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'">
+                        Login</a></li>
+                <li><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
+            </ul>
+        </div>
+        <script src="../../javascript/script.js"></script>
+    </div>
+
+    <!-- the below code i found it on w3school
+    https://www.w3schools.com/howto/howto_css_login_form.asp -->
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate comments__form" method="POST">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img width="150px" height="150px"
+                    src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" alt="avatar">
+                    <h2 style="text-align: center;">Log In</h2>
+            </div>
+
+            <div class="container comments__form-info" style="width: 80%;">
+                <div class="comments__form-field">
+                    <input id="comments__form-label-name" name="author" placeholder="Name" type="text"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-name">
+                        <span class="comments__form-label-text">Name</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw1" name="password" placeholder="Password" type="password"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-psw1">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <!-- <button type="submit">Login</button> -->
+                <input name="submit" type="submit" id="submit" class="comments__form-submit" value="Login"
+                    style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1; width: 80%;">
+
+                <input onclick="document.getElementById('id01').style.display='none'" name="submit" type="submit"
+                    id="cancel" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                    style="width: 100%; text-align: center; border-color: brown;">
+
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+
+
+    <!-- end of first code -->
+
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="modal-content animate comments__form" method="post">
+            <div class="container comments__form-info" style="width: 80%;">
+                <h1>Create Your account</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <div class="fullname">
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-name1" name="author" placeholder="Name" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-name1">
+                            <span class="comments__form-label-text">Name</span>
+                        </label>
+                    </div>
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-surname" name="author" placeholder="Surname" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-surname">
+                            <span class="comments__form-label-text">Surname</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-email" name="password" placeholder="Enter your Email" type="email"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-email">
+                        <span class="comments__form-label-text">Email</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw" name="password" placeholder="Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-psw">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-re-psw" name="password" placeholder="Re-Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-re-psw">
+                        <span class="comments__form-label-text">Re-Password</span>
+                    </label>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="fullname">
+                    <input onclick="document.getElementById('id02').style.display='none'" name="submit" type="submit"
+                        id="cnx" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                        style="width: 100%; text-align: center; border-color: brown;">
+                    <input name="submit" type="submit" id="sing_up" class="comments__form-submit signupbtn"
+                        value="Sign Up" style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+
+                </div>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id02');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+    <!-- partial:index.partial.html -->
+    <!-- The below code i found it on code pen
+          # Slideshow Parallax with TweenMax
+         _A Pen created at CodePen.io. Original URL: [https://codepen.io/cersaatrova/pen/OJPXwyy](https://codepen.io/cersaatrova/pen/OJPXwyy).
+         -->
+    <main class="main-content">
+        <section class="slideshow">
+            <div class="slideshow-inner">
+                <div class="slides">
+                    <div class="slide is-active ">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Paris - Europe</div>
+                                <div class="text">
+                                    <p> Pellentesque at neque eu leo placerat pretium. Donec gravida nisi a ligula
+                                        suscipit auctor eu a magna. Vivamus nec convallis sem, sit amet condimentum
+                                        nisi. Donec dapibus magna et turpis gravida ullamcorper. Nullam egestas bibendum
+                                        arcu, sed finibus ante. Sed dictum molestie pellentesque. Sed at viverra risus,
+                                        a placerat mi. Integer mauris metus, consectetur ut faucibus nec, tempor ac est.
+                                        Cras maximus lorem sed vehicula semper. Proin varius scelerisque quam a rhoncus.
+                                        Cras rhoncus sem a augue consequat, malesuada malesuada risus rhoncus.
+
+                                    </p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1436637706755-81d219b36e29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Tokyo - Asia </div>
+                                <div class="text">
+                                    <p>Cras eu fermentum dui. Pellentesque imperdiet metus non felis consequat aliquam.
+                                        In magna lorem, posuere id laoreet eget, auctor non magna. Ut lobortis turpis et
+                                        dolor lobortis vestibulum. Pellentesque id efficitur metus. Vivamus elementum
+                                        orci ut erat pharetra, non ultricies felis rutrum. Aliquam erat volutpat. </p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1424296308064-1eead03d1ad9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Las Vegas - USA</div>
+                                <div class="text">
+                                    <p> Suspendisse hendrerit nunc tortor, non auctor nisi blandit aliquam. In placerat
+                                        pretium orci quis elementum. Donec eget consequat enim, a placerat lorem.
+                                        Pellentesque ac dolor nisi. In hac habitasse platea dictumst. Vivamus semper
+                                        purus a vehicula tempus. Suspendisse tempus, lacus vel consectetur eleifend, mi
+                                        orci sodales eros, dapibus interdum urna velit in lectus. Donec sapien nisl,
+                                        tristique vel bibendum a, finibus eleifend ex. Quisque luctus purus id dolor
+                                        placerat lobortis. Donec id nunc in quam tincidunt porttitor. Ut non magna
+                                        neque. Vestibulum ac varius nisl.
+                                        <br><br>Photo by Timo Volz on Unsplash</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1506804886640-20a2c0857946?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+                                alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Dubai - UAE </div>
+                                <div class="text">
+                                    <p>Suspendisse sit amet faucibus nisi. Sed fermentum orci sit amet purus pulvinar
+                                        consectetur. Maecenas nec maximus sapien. Nunc quis tincidunt ipsum. Praesent ut
+                                        odio sit amet erat rutrum hendrerit. Morbi vestibulum dapibus consequat.
+                                        Praesent euismod dui sed aliquet finibus. <br><br>Photo by Augustin de
+                                        Montesquiou on Unsplash</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1503900311769-9f25e9f06068?ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80"
+                                alt="" class="image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="item is-active">
+                        <span class="icon">1</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">2</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">3</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">4</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script src="../../javascript/slideShowScript.js"></script>
+
+
+    <section id="fst_section_top_region">
+        <div class="content_fst_prg">
+            <h2>Top Region</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt, elit sit amet ultrices accumsan,
+                tellus dolor faucibus sem, eget feugiat neque velit quis libero. Praesent porttitor aliquam massa. Fusce
+                felis ipsum, consectetur sit amet blandit eget, pellentesque non massa. Morbi at lorem consequat diam
+                pretium accumsan. Proin quis ante sed augue vestibulum sollicitudin sed eu tortor. Praesent ut turpis
+                ullamcorper, pharetra enim non, ornare enim. Vivamus vel elit ipsum. In nulla ligula, accumsan et nibh
+                ac, ullamcorper euismod erat. Etiam mattis massa dui, at convallis justo ultricies vitae. Etiam
+                tincidunt neque at elit tincidunt, at luctus nisi semper. </p>
+            <!-- the below code i use bootstrap for tool tip -->
+            <div class="img_cnt_region">
+                <div><a href="#arab_continent" data-toggle="tooltip" data-placement="bottom"
+                        title="Visit United Arab Emirates"><img
+                            src="https://res.cloudinary.com/sotiris/image/upload/c_scale,w_150/v1577223862/arabEmirate_wegjmk.png"
+                            alt=""></a></div>
+                <div><a href="#asia_continent" data-toggle="tooltip" data-placement="bottom" title="Visit Asia"
+                        style="transition: 0.3s linear ;"><img
+                            src="https://res.cloudinary.com/sotiris/image/upload/c_scale,w_150/v1577223863/asia_663489_oyhz5o.png"
+                            alt=""></a></div>
+                <div><a href="#europe_continent" data-toggle="tooltip" data-placement="bottom" title="Visit Europe"><img
+                            src="https://res.cloudinary.com/sotiris/image/upload/c_scale,w_150/v1577223862/arabEmirate_wegjmk.png"
+                            alt=""></a></div>
+                <div><a href="#america_continent" data-toggle="tooltip" data-placement="bottom" title="Visit USA"><img
+                            src="https://res.cloudinary.com/sotiris/image/upload/c_scale,w_150/v1577223861/img_amer_xakqat.png"
+                            alt=""></a></div>
+            </div>
+            <!-- partial -->
+        </div>
+
+    </section>
+    <section id="section_nd_quotes">
+        <div class="nd-prgh_quotes">
+            <div> <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223859/nagatoshi-_eozfn4.jpg" alt="">
+            </div>
+            <div class="content_nd_prgh">
+                <blockquote>
+                    <h1>Travel is the only thing you buy that makes you richer.</h1>
+                </blockquote>
+                <p>Money makes traveling a possibility, but it doesn’t enrich you like sharing experiences with new
+                    cultures. I’m not sure who coined this inspirational travel quote, but they hit the nail on the
+                    head!</p>
+            </div>
+            <div class="img_prgh_nd_ad">
+                <div><img src="https://res.cloudinary.com/sotiris/image/upload/v1577223859/mesut_emgxya.jpg"
+                        alt="bg image"></div>
+
+            </div>
+        </div>
+    </section>
+    <section id="section_4th_quotes">
+        <div class="prgh_4th_quotes">
+
+            <div class="content_4th_prgh">
+
+                <blockquote>
+                    <h1>&OpenCurlyDoubleQuote;We live in a wonderful world that is full of beauty, charm, and adventure. There is no end to
+                        the adventures we can have if only we seek them with our eyes open.&CloseCurlyDoubleQuote; – Jawaharial Nehru</h1>
+                </blockquote>
+                <p>It’s unsurprising that someone who learned directly from Gandhi would have such an inspiring way of
+                    looking at the world. Open your eyes to the beauty of a sunrise or waves rolling into the shore. No
+                    matter how many times you’ve seen them, they’re still full of beauty.</p>
+            </div>
+            <div class="img_prgh_4th_ad">
+                <div>
+                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223864/dino-reichmuth-A5rCN8626Ck-unsplash_uawnz4.jpg"
+                        alt="bg image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="asia_continent">
+        <div class="asia_countries">
+            <div class="content-asia">
+                <!-- the below code i found on w3school and using bootstrap 
+                https://www.w3schools.com/bootstrap/bootstrap_images.asp
+            -->
+                <div class="container">
+                    <h2>Discover Asia </h2>
+                    <p>Proin porttitor justo elit, id dapibus diam posuere quis.
+                    </p>
+                    <p>Duis ullamcorper dui in sem
+                        aliquam facilisis. Nulla nisi nibh,.</p>
+                    <div class="row">
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="#" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224973/Images/countrys/Indonesia/bali_slicyc.jpg"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Indonesia</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="#" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224939/Images/countrys/China/China-singapore480x280_d6kt2j.jpg"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>China</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="#" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224881/Images/countrys/Japan/japan_geswji.jpg"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Japan</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="europe_continent">
+        <div class="europe_countries">
+            <div class="content-europe">
+                <div class="container">
+                    <h2>Discover Europe </h2>
+                    <p>
+                        Proin porttitor justo elit, id dapibus diam posuere quis.
+                    </p>
+                    <p>
+                        Duis ullamcorper dui in sem
+                        aliquam facilisis. Nulla nisi nibh,.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="../../html/countries/italy_index.html" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224859/Images/countrys/Italy/bg_homepage_yq7gg3.jpg"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Italy</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="../countries/cyprus_index.html" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224743/Images/countrys/cyprus/cy_homepage_ymphac.jpg"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Cyprus</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="#" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577225160/Images/countrys/Greece/greece_huejlc.jpg"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Greece</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="#" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223859/spain_ylinkd.jpg"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Spain</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="../countries/france.html" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223861/france_mur4ez.jpg"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>France</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="thumbnail ">
+                                <a href="#" style="cursor: default; text-decoration: none;">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223859/travel-packages-coming-soon_obkjkg.png"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Coming Soon</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="arab_continent">
+        <div class="arab_countries">
+            <div class="content-arab">
+                <div class="container">
+                    <h2>Discover U.A.E. </h2>
+                    <p>Proin porttitor justo elit, id dapibus diam posuere quis.
+                    </p>
+                    <p>Duis ullamcorper dui in sem
+                        aliquam facilisis. Nulla nisi nibh,.</p>
+                    <div class="row">
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="#" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223862/dubai_lmobgo.jpg"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Dubai</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="thumbnail ">
+                                <a href="#" style="cursor: default; text-decoration: none;">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223859/travel-packages-coming-soon_obkjkg.png"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Coming Soon</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail ">
+                                <a href="#" style="cursor: default; text-decoration: none;">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223859/travel-packages-coming-soon_obkjkg.png"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Coming Soon</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="america_continent">
+        <div class="america_countries">
+            <div class="content-america">
+                <div class="container">
+                    <h2>Discover America </h2>
+                    <p>Proin porttitor justo elit, id dapibus diam posuere quis.
+                    </p>
+                    <p>Duis ullamcorper dui in sem
+                        aliquam facilisis. Nulla nisi nibh,.</p>
+                    <div class="row">
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="#" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224836/Images/countrys/las%20vegas/offer-image-9002443-3KViRfvbqh-1559823807_xbxuzz.jpg"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>(L.A) Las Vegas</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hover12">
+                            <div class="thumbnail city">
+                                <a href="#" target="_blank">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223862/cuba_g1t5af.webp"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Cuba</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="thumbnail ">
+                                <a href="#" style="cursor: default; text-decoration: none;">
+                                    <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223859/travel-packages-coming-soon_obkjkg.png"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <h3>Coming Soon</h3>
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_ls_quotes">
+        <div class="ls-prgh_quotes">
+            <div>
+                <blockquote>
+                    <h1> “The world is a book, and those who do not travel read only one page.” – Saint Augustine</h1>
+                </blockquote>
+                <p>We may feel safe in our little bubble, but it’s also boring. That’s the primary reason I started
+                    traveling several years ago, and I’ve fallen in love with the thrill of discovery. It doesn’t get
+                    any more real than this short travel quote.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="comments_prg">
+        <div class="comment-content">
+            <!-- partial:index.partial.html -->
+            <div class="comments">
+                <div class="frm_comment_">
+                    <h2 style="font-size: 2.5rem; color: #181a2b;">Leave a comment</h2>
+
+                    <form class="comments__form">
+                        <div class="comments__form-info">
+
+                            <div class="comments__form-field">
+                                <input id="comments__form-label-n1_name" name="author" placeholder="Name" type="text"
+                                    class="comments__form-input">
+                                <label class="comments__form-label" for="comments__form-label-n1_name">
+                                    <span class="comments__form-label-text">Name</span>
+                                </label>
+                            </div>
+
+                            <div class="comments__form-field">
+                                <input id="comments__form-label-mail" name="author" placeholder="E-mail" type="text"
+                                    class="comments__form-input">
+                                <label class="comments__form-label" for="comments__form-label-mail">
+                                    <span class="comments__form-label-text">E-mail</span>
+                                </label>
+                            </div>
+
+                            <div class="comments__form-field">
+                                <input id="comments__form-label-site" name="author" placeholder="Website" type="text"
+                                    class="comments__form-input">
+                                <label class="comments__form-label" for="comments__form-label-site">
+                                    <span class="comments__form-label-text">Website</span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="comments__form-text">
+
+                            <div class="comments__form-field">
+                                <textarea id="comments__form-label-text" name="author"
+                                    placeholder="Express your thoughts"
+                                    class="comments__form-input comments__form-textarea"></textarea>
+                                <label class="comments__form-label" for="comments__form-label-text">
+                                    <span class="comments__form-label-text">Express your thoughts</span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <input name="submit" type="submit"  class="comments__form-submit"
+                            value="Post Comment">
+                    </form>
+                </div>
+                <div class="comments__list">
+                    <h2 style="font-size: 2.5rem; color: #181a2b;">Most Relevant Comment</h2>
+                    <div class="relevant_comment">
+                        <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Pipina - 23/01/2019</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="relevant_comment">
+                        <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Hatzipamias 22/05/2019</h3>
+                        <p>Nam fermentum, velit aliquet facilisis vulputate, ex ante pretium nibh, eu suscipit
+                            <span class="show" style=" display:none; ">lorem justo et nunc. Nunc eget scelerisque
+                                mauris. Quisque
+                                posuere, tellus sit amet ornare
+                                dignissim, dolor felis scelerisque urna, ornare venenatis dui felis id tortor.</span>
+                        </p>
+                        <div class="read" style="cursor: pointer;" onclick="show_more()">Show
+                            More</div>
+
+                    </div>
+                    <div class="relevant_comment">
+                        <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Peklivanis</h3>
+                        <p>Nam dapibus arcu non magna sodales condimentum. In volutpat nunc et nunc dapibus, feugiat
+                            tincidunt
+                            lacus
+                            sollicitudin.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- footer page -->
+    <footer>
+        <section id="footer">
+            <div class="footer_section">
+                <div class="content">
+                    <div class="contact_us" style="width: 30%;">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Contact us</h1>
+                        <ul>
+                            <li>
+                                <h3>Limasol</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>25 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 321548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@limasol.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Larnaca</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>24 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 221548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@larnaca.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Nicosia</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>22 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 121548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@nicosia.com</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="find_us" style="width: 30%;">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Find us </h1>
+                        <div class="social_media">
+                            <ul>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="subscribe" style="width: 30%;">
+                        <div class="subscribe">
+                            <h1 style="color: rgba(255, 255, 255, 0.589);">Subscribe for news</h1>
+                            <form action="#">
+                                <div class="comments__form-field">
+                                    <input id="comments__form-label-mail_1" name="author" placeholder="Enter your E-mail"
+                                        type="text" class="comments__form-input"
+                                        style="background-color: transparent; color: #fff;">
+                                    <label class="comments__form-label" for="comments__form-label-mail_1">
+                                        <span class="comments__form-label-text"
+                                            style="color:  rgba(255, 255, 255, 0.589);">E-mail</span>
+                                    </label>
+
+                                </div>
+                                <input name="submit" type="submit" class="comments__form-submit"
+                                    value="Subscribe" style="color:#fff ;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_footer" style="margin: 50px 50px 0 -50px "><a href="../homepage/index.html">
+                        <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224087/Images/logo_euztxp.png"
+                            alt="logo"></a>
+
+                </div>
+                <div class="copyright">&copy; copyright Bird of passage | All right reserved</div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bird of Passage - The new Travel Guide 2020- Homepage</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Roboto:400,400i,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/homepage/homepage_style.css">
+  <link rel="stylesheet" href="../../css/homepage/comment_style.css">
+  <link rel="stylesheet" href="../../css/homepage/slideShowStyle.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="img-logo">
+      <a href="index.html"><img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+          alt="logo"></a>
+
+    </div>
+    <div class="bar_navigation">
+      <ul>
+        <li class="border-box"><a href="index.html">Home</a></li>
+        <li><a href="../Travell/index.html">Travel</a></li>
+        <li><a href="../TripIdea/tripidea_index.html">Trip Idea</a></li>
+        <li><a href="../legancylifestyle/llifestyle_index.html">Legancy Lifestyle</a></li>
+        <li><a href="../about us/about_us_index.html">About us</a></li>
+      </ul>
+    </div>
+    <div class="bar_navigation">
+      <ul>
+        <li><a href="#" onclick="document.getElementById('id01').style.display='block'">
+            Login</a></li>
+        <li><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
+      </ul>
+    </div>
+    <script src="../../javascript/script.js"></script>
+  </div>
+
+  <!-- the below code i found it on w3school
+https://www.w3schools.com/howto/howto_css_login_form.asp -->
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate comments__form" method="POST">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <img width="150px" height="150px" src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png"
+          alt="avatar">
+          <h2 style="text-align: center;">Log In</h2>
+      </div>
+
+      <div class="container comments__form-info" style="width: 80%;">
+        <div class="comments__form-field">
+          <input id="comments__form-label-name1" name="author" placeholder="Name" type="text"
+            class="comments__form-input">
+          <label class="comments__form-label" for="comments__form-label-name1">
+            <span class="comments__form-label-text">Name</span>
+          </label>
+        </div>
+        <div class="comments__form-field">
+          <input id="comments__form-label-psw1" name="password" placeholder="Password" type="password"
+            class="comments__form-input">
+          <label class="comments__form-label" for="comments__form-label-psw1">
+            <span class="comments__form-label-text">Password</span>
+          </label>
+        </div>
+        <!-- <button type="submit">Login</button> -->
+        <input name="submit" type="submit" class="comments__form-submit" value="Login"
+          style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1; width: 80%;">
+
+        <input onclick="document.getElementById('id01').style.display='none'" name="submit" type="submit" id="cancel"
+          class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+          style="width: 100%; text-align: center; border-color: brown;">
+
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </div>
+
+
+
+  <!-- end of first code -->
+
+  <div id="id02" class="modal">
+    <span onclick="document.getElementById('id02').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+    <form class="modal-content animate comments__form" method="post">
+      <div class="container comments__form-info" style="width: 80%;">
+        <h1>Create Your account</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <div class="fullname">
+          <div class="comments__form-field" style="width: 45%;">
+            <input id="comments__form-label-name2" name="author" placeholder="Name" type="text"
+              class="comments__form-input" required>
+            <label class="comments__form-label" for="comments__form-label-name2">
+              <span class="comments__form-label-text">Name</span>
+            </label>
+          </div>
+          <div class="comments__form-field" style="width: 45%;">
+            <input id="comments__form-label-surname" name="author" placeholder="Surname" type="text"
+              class="comments__form-input" required>
+            <label class="comments__form-label" for="comments__form-label-surname">
+              <span class="comments__form-label-text">Surname</span>
+            </label>
+          </div>
+        </div>
+        <div class="comments__form-field">
+          <input id="comments__form-label-email2" name="password" placeholder="Enter your Email" type="email"
+            class="comments__form-input" required>
+          <label class="comments__form-label" for="comments__form-label-email2">
+            <span class="comments__form-label-text">Email</span>
+          </label>
+        </div>
+        <div class="comments__form-field">
+          <input id="comments__form-label-psw" name="password" placeholder="Password" type="password"
+            class="comments__form-input" required>
+          <label class="comments__form-label" for="comments__form-label-psw">
+            <span class="comments__form-label-text">Password</span>
+          </label>
+        </div>
+        <div class="comments__form-field">
+          <input id="comments__form-label-re-psw" name="password" placeholder="Re-Password" type="password"
+            class="comments__form-input" required>
+          <label class="comments__form-label" for="comments__form-label-re-psw">
+            <span class="comments__form-label-text">Re-Password</span>
+          </label>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <div class="fullname">
+          <input onclick="document.getElementById('id02').style.display='none'" name="submit" type="submit" id="cnx"
+            class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+            style="width: 100%; text-align: center; border-color: brown;">
+          <input name="submit" type="submit" id="sing_up" class="comments__form-submit signupbtn" value="Sign Up"
+            style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+
+        </div>
+      </div>
+    </form>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id02');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </div>
+
+  <!-- partial:index.partial.html -->
+  <!-- The below code i found it on code pen
+  # Slideshow Parallax with TweenMax
+ _A Pen created at CodePen.io. Original URL: [https://codepen.io/cersaatrova/pen/OJPXwyy](https://codepen.io/cersaatrova/pen/OJPXwyy).
+ -->
+  <main class="main-content">
+    <section class="slideshow">
+      <div class="slideshow-inner">
+        <div class="slides">
+          <div class="slide is-active ">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Cyprus (Ayia Napa)-Love Bridge</div>
+                <div class="text">
+                  <p>The bridge of the lovers or the bridge of love is very beautiful and one of the most romantic
+                    places in all of Cyprus. Visits to the bridge from newlyweds and couples has become almost a
+                    tradition. Sometimes wedding ceremonies also take place here</p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Learn More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img
+                src="https://res.cloudinary.com/sotiris/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1577224106/Images/viatour-cathy-_es44Nvg6PI-unsplash_etnnm9.jpg"
+                alt="" class="image" />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Rome - Vaticano</div>
+                <div class="text">
+                  <p>Vatican City, a city-state surrounded by Rome, Italy, is the headquarters of the Roman Catholic
+                    Church. It's home to the Pope and a trove of iconic art and architecture. Its Vatican Museums house
+                    ancient Roman sculptures such as the famed “Laocoön and His Sons” as well as Renaissance frescoes in
+                    the Raphael Rooms and the Sistine Chapel, famous for Michelangelo’s ceiling.
+                    <br> <br>Photo by Caleb Miller on Unsplash</p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Learn More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224155/Images/vaticano_xamzla.jpg" alt=""
+                class="image" />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Tokyo - Metropolitan (center)</div>
+                <div class="text">
+                  <p> The metropolitan area is the largest industrial, commercial, and financial centre in Japan. Many
+                    domestic and international financial institutions and other businesses are headquartered in central
+                    Tokyo. The city is an important wholesale centre, where goods from all parts of the country and the
+                    world are distributed.
+                    <br><br>Photo by Timo Volz on Unsplash</p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Learn More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224151/Images/cuba_ik2c8f.jpg" alt=""
+                class="image" />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Cuba-Havana</div>
+                <div class="text">
+                  <p>Cuba: an island brimming with vibrant art, soul-stirring music and villages cloaked in colonial
+                    charm. Home to nine UNESCO World Heritage Sites and a population as warm and scintillating as its
+                    tropical climate and colorful arts, Cuba—once again accessible to American travelers—is a country
+                    begging to be explored.<br><br>Photo by Augustin de Montesquiou on Unsplash</p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Learn More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224151/Images/cuba_ik2c8f.jpg" alt=""
+                class="image" />
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="item is-active">
+            <span class="icon">1</span>
+          </div>
+          <div class="item">
+            <span class="icon">2</span>
+          </div>
+          <div class="item">
+            <span class="icon">3</span>
+          </div>
+          <div class="item">
+            <span class="icon">4</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+  <script src="../../javascript/slideShowScript.js"></script>
+
+
+
+  <div class="first_paragraph">
+    <div class="inner-first-paragraph">
+      <div class="content_paragraph">
+        <div class="param_first">
+          <h1>We want to <span>help you</span> to travel better</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut congue ligula, vitae eleifend nulla.
+            Fusce
+            eleifend nulla vitae velit varius, a eleifend nisi finibus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut congue ligula, vitae eleifend nulla.
+            Fusce
+            eleifend nulla vitae velit varius, a eleifend nisi finibus.</p>
+          <div class="social_media">
+            <ul>
+              <li><a href="#"> <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span></a></li>
+              <li><a href="#"> <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span></a></li>
+              <li><a href="#"> <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span></a></li>
+              <li><a href="#"> <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span></a></li>
+            </ul>
+          </div>
+
+
+        </div>
+        <div class="image_wlc">
+          <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223863/wlc_4_img_zdppz2.png"
+            alt="4 different places">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nd_paragraph">
+    <div class="inner-nd_paragraph">
+      <div class="inner-content_nd2">
+        <div class="content_nd2">
+          <h1 style="color: rgba(255, 255, 255, 0.589);">Delightful, to travel you at the <span
+              style="color: #feafaa; font-size: 1.3em;">hidden</span> <span
+              style="color: #6da7b2; font-size: 1.3em;">corner</span> all over the world</h1>
+          <p>Donec ac vulputate augue, suscipit rutrum mauris. Nulla
+            a dolor dui. Fusce ut felis vestibulum, eleifend sem nec, tempor enim. Phasellus vitae velit sit amet tortor
+            faucibus pulvinar. Donec varius odio quis mattis auctor. </p>
+          <!-- 
+       connect the link with destination page  -->
+          <div class="btn-paragraph_nd"><a href="#" class="btn">
+              <span class="btn-inner">Learn More</span>
+            </a></div>
+        </div>
+        <div class="img-para-nd2">
+          <img
+            src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_450,w_700/v1577223860/wolrd_countries_pdrw51.jpg"
+            alt="world counties">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="rd_paragraph3">
+    <div class="inner-rd_paragraph">
+      <div class="content_title_prg">
+        <div class="title_prg">
+          <h2 style="font-size: 2.5rem; color: #181a2b;">Travel insparation</h2>
+        </div>
+        <div class="content_prg3">
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed tincidunt
+            venenatis
+            vehicula. Ut vel ante maximus, consequat eros a, vestibulum enim.</p>
+        </div>
+      </div>
+
+      <!-- image grid view -->
+      <div class="img_paragraph-3rd">
+        <div class="container">
+          <img
+            src="https://res.cloudinary.com/sotiris/image/upload/v1577224859/Images/countrys/Italy/bg_homepage_yq7gg3.jpg"
+            class="image" alt="">
+          <div class="middle btn-paragraph_nd">
+            <div class="info">
+              <a href="../countries/italy_index.html" class="btn text_img"
+                style="border:1px solid black; background-color: rgba(0, 0, 0, 0.311);">
+                <span class="btn-inner" style="color: black; font-weight: bold; ">Visit Italy</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://res.cloudinary.com/sotiris/image/upload/v1577224881/Images/countrys/Japan/japan_geswji.jpg"
+            class="image" alt="japan">
+          <div class="middle btn-paragraph_nd">
+            <div class="info">
+              <a href="#" class="btn text_img" style="border:1px solid black; background-color: rgba(0, 0, 0, 0.311);">
+                <span class="btn-inner" style="color: black; font-weight: bold; ">Visit Japan</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://res.cloudinary.com/sotiris/image/upload/v1577223861/index_itb2uy.jpg" class="image" alt="">
+          <div class="middle btn-paragraph_nd">
+            <div class="info">
+              <a href="#" class="btn text_img" style="border:1px solid black; background-color: rgba(0, 0, 0, 0.311);">
+                <span class="btn-inner" style="color: black; font-weight: bold; ">Visit Dubai</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img
+            src="https://res.cloudinary.com/sotiris/image/upload/v1577224836/Images/countrys/las%20vegas/offer-image-9002443-3KViRfvbqh-1559823807_xbxuzz.jpg"
+            class="image" alt="">
+          <div class="middle btn-paragraph_nd">
+            <div class="info">
+              <a href="#" class="btn text_img" style="border:1px solid black; background-color: rgba(0, 0, 0, 0.311);">
+                <span class="btn-inner" style="color: black; font-weight: bold; ">Visit Las Vegas</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <img
+            src="https://res.cloudinary.com/sotiris/image/upload/v1577224939/Images/countrys/China/China-singapore480x280_d6kt2j.jpg"
+            class="image" alt="">
+          <div class="middle btn-paragraph_nd">
+            <div class="info">
+              <a href="#" class="btn text_img" style="border:1px solid black; background-color: rgba(0, 0, 0, 0.311);">
+                <span class="btn-inner" style="color: black; font-weight: bold; ">Visit China</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img
+            src="https://res.cloudinary.com/sotiris/image/upload/v1577224973/Images/countrys/Indonesia/bali_slicyc.jpg"
+            class="image" alt="">
+          <div class="middle btn-paragraph_nd">
+            <div class="info">
+              <a href="#" class="btn text_img" style="border:1px solid black; background-color: rgba(0, 0, 0, 0.311);">
+                <span class="btn-inner" style="color: black; font-weight: bold; ">Visit Indonesia</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="city_break">
+    <div class="prg_4th">
+      <div class="prg_4th_title_content">
+
+        <div class="title_4th_prg">
+          <h1 style="color: rgba(255, 255, 255, 0.589);">planning a trip to <span
+              style="color: #feafaa; font-size: 2em;">Greece</span> for your next holiday.</h1>
+        </div>
+        <div class="content_4th_prg">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat lorem vitae suscipit
+            interdum.
+            Duis consectetur diam ac mauris lobortis fermentum. Donec ullamcorper nisi leo, a placerat orci sodales
+            sed.
+            Nam vitae ultrices velit, eu pharetra justo. Mauris ac feugiat justo. Aenean vitae augue sed lacus
+            consectetur
+            bibendum et a ipsum. Suspendisse porttitor faucibus mauris, nec pellentesque tortor facilisis fermentum.
+          </p>
+        </div>
+        <div class="btn-paragraph_4th"><a href="#" class="btn">
+            <span class="btn-inner">Learn More</span>
+          </a></div>
+      </div>
+    </div>
+
+  </section>
+  <section class="comments_prg">
+    <div class="comment-content">
+      <!-- partial:index.partial.html -->
+      <div class="comments">
+        <div class="frm_comment_">
+          <h2 style="font-size: 2.5rem; color: #181a2b;">Leave a comment</h2>
+
+          <form class="comments__form">
+            <div class="comments__form-info">
+
+              <div class="comments__form-field">
+                <input id="comments__form-label-name" name="author" placeholder="Name" type="text"
+                  class="comments__form-input">
+                <label class="comments__form-label" for="comments__form-label-name">
+                  <span class="comments__form-label-text">Name</span>
+                </label>
+              </div>
+
+              <div class="comments__form-field">
+                <input id="comments__form-label-mail" name="author" placeholder="E-mail" type="text"
+                  class="comments__form-input">
+                <label class="comments__form-label" for="comments__form-label-mail">
+                  <span class="comments__form-label-text">E-mail</span>
+                </label>
+              </div>
+
+              <div class="comments__form-field">
+                <input id="comments__form-label-site" name="author" placeholder="Website" type="text"
+                  class="comments__form-input">
+                <label class="comments__form-label" for="comments__form-label-site">
+                  <span class="comments__form-label-text">Website</span>
+                </label>
+              </div>
+
+            </div>
+
+            <div class="comments__form-text">
+
+              <div class="comments__form-field">
+                <textarea id="comments__form-label-text" name="author" placeholder="Express your thoughts"
+                  class="comments__form-input comments__form-textarea"></textarea>
+                <label class="comments__form-label" for="comments__form-label-text">
+                  <span class="comments__form-label-text">Express your thoughts</span>
+                </label>
+              </div>
+
+            </div>
+            <input name="submit" type="submit" id="submit" class="comments__form-submit" value="Post Comment">
+          </form>
+        </div>
+        <div class="comments__list">
+          <h2 style="font-size: 2.5rem; color: #181a2b;">Most Relevant Comment</h2>
+          <div class="relevant_comment">
+            <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Pipina - 23/01/2019</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="relevant_comment">
+            <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Hatzipamias 22/05/2019</h3>
+            <p>Nam fermentum, velit aliquet facilisis vulputate, ex ante pretium nibh, eu suscipit
+              <span class="show" style=" display:none; ">lorem justo et nunc. Nunc eget scelerisque mauris. Quisque
+                posuere, tellus sit amet ornare
+                dignissim, dolor felis scelerisque urna, ornare venenatis dui felis id tortor.</span></p>
+            <div class="read" style="cursor: pointer;" onclick="show_more()">Show
+              More</div>
+
+          </div>
+          <div class="relevant_comment">
+            <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Peklivanis</h3>
+            <p>Nam dapibus arcu non magna sodales condimentum. In volutpat nunc et nunc dapibus, feugiat tincidunt
+              lacus
+              sollicitudin.</p>
+          </div>
+          <div class="relevant_comment">
+            <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Parpounas</h3>
+            <p> Curabitur sed molestie est. In tincidunt vel purus elementum mollis. Fusce euismod neque est, a mattis
+              leo aliquet eu.</p>
+          </div>
+          <div class="relevant_comment">
+            <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Stamata</h3>
+            <p>In hac habitasse platea dictumst.</p>
+          </div>
+          <div class="relevant_comment">
+            <h3><i class="fa fa-user-circle" style="font-size:24px"></i> Melintzanas</h3>
+            <p> Praesent in accumsan felis. Integer rhoncus ultricies massa, egestas congue arcu malesuada non.
+              Aliquam
+              sed mi non sem ultrices interdum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <section id="footer">
+      <div class="footer_section">
+        <div class="content">
+          <div class="contact_us" style="width: 30%;">
+            <h1 style="color: rgba(255, 255, 255, 0.589);">Contact us</h1>
+            <ul>
+              <li>
+                <h3>Limasol</h3>
+                <ul>
+                  <li><i class='fas' style="font-size: 12px;">&#xf879;</i>25 123654</li>
+                  <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 321548</li>
+                  <li><i class="fas fa-at" style="font-size: 10px;"></i>info@limasol.com</li>
+                </ul>
+              </li>
+              <li>
+                <h3>Larnaca</h3>
+                <ul>
+                  <li><i class='fas' style="font-size: 12px;">&#xf879;</i>24 123654</li>
+                  <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 221548</li>
+                  <li><i class="fas fa-at" style="font-size: 10px;"></i>info@larnaca.com</li>
+                </ul>
+              </li>
+              <li>
+                <h3>Nicosia</h3>
+                <ul>
+                  <li><i class='fas' style="font-size: 12px;">&#xf879;</i>22 123654</li>
+                  <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 121548</li>
+                  <li><i class="fas fa-at" style="font-size: 10px;"></i>info@nicosia.com</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="find_us" style="width: 30%;">
+            <h1 style="color: rgba(255, 255, 255, 0.589);">Find us </h1>
+            <div class="social_media">
+              <ul>
+                <li><a href="#"> <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span></a></li>
+                <li><a href="#"> <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span></a></li>
+                <li><a href="#"> <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                    </span></a></li>
+                <li><a href="#"> <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span></a></li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="subscribe" style="width: 30%;">
+            <div class="subscribe">
+              <h1 style="color: rgba(255, 255, 255, 0.589);">Subscribe for news</h1>
+              <form action="#">
+                <div class="comments__form-field">
+                  <input id="comments__form-label-mail1" name="author" placeholder="Enter your E-mail" type="text"
+                    class="comments__form-input" style="background-color: transparent; color: #fff;">
+                  <label class="comments__form-label" for="comments__form-label-mail1">
+                    <span class="comments__form-label-text" style="color:  rgba(255, 255, 255, 0.589);">E-mail</span>
+                  </label>
+
+                </div>
+                <input name="submit" type="submit" id="submit1" class="comments__form-submit" value="Subscribe"
+                  style="color:#fff ;">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="logo_footer" style="margin: 50px 50px 0 -50px "><a href="#">
+            <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+              alt="logo"></a>
+
+        </div>
+        <div class="copyright">&copy; copyright Bird of passage | All right reserved</div>
+      </div>
+    </section>
+  </footer>
+
+</body>
+
+</html>

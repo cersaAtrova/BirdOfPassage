@@ -1,0 +1,437 @@
+/* 
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Quicksand', sans-serif;
+ */
+ @import url("../../css/homepage/login.css");
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    --main-txt-color: #181a2b;
+    --main-bg-color: rgba(235, 235, 235, 0.8);
+    ;
+}
+
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: inherit !important;
+    line-height: normal !important;
+    font-size: inherit !important;
+    color: inherit !important;
+    text-decoration: inherit !important;
+}
+@media only screen and (max-width: 1300px) {
+    :root {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+
+}
+
+/*
+    logo
+    and navigation bar
+    */
+
+div.navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+
+    z-index: 10;
+}
+
+div.bar_navigation>ul li {
+    display: inline-block;
+    margin: 20px 35px 0 0;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+
+
+}
+
+div.bar_navigation>ul li a {
+    color: #fff;
+    padding: 5px;
+}
+
+div.bar_navigation>ul li.border-box:nth-child(2) {
+
+    border: 2px solid white;
+}
+
+div.bar_navigation>ul>li a:hover
+ {
+    color: #d3d3d39d !important;
+    
+    text-decoration: none;
+   
+
+
+}
+div.bar_navigation>ul>li:hover{
+  border: 2px solid #d3d3d39d !important;
+}
+
+
+div.bar_navigation>ul>li a:active {
+    color: #373737;
+    border: 2px solid #fff;
+}
+
+/*
+  *
+  *First paragraph, Top region
+  *
+  */
+#fst_section_top_region {
+    width: 100%;
+    margin: 100px 0;
+}
+
+.content_fst_prg {
+    width: 70%;
+    margin: auto;
+    background-color: var(--main-bg-color);
+    padding: 50px 25px;
+}
+
+.content_fst_prg h2 {
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-txt-color);
+    padding-left: 20px;
+}
+
+.content_fst_prg .img_cnt_region {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content_fst_prg .img_cnt_region div:hover {
+    background-color: #373737;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.content_fst_prg>p {
+    width: 70%;
+margin: auto;
+    line-height: 1.5em;
+    font-size: 0.8rem;
+    color: var(--main-txt-color);
+    padding-left: 20px;
+    text-align: justify;
+}
+
+/*
+*
+*Section paragraph 2
+*Holiday quote
+*/
+#section_nd_quotes {
+    width: 100%;
+    padding: 100px;
+    background-color: var(--main-txt-color);
+
+}
+
+.nd-prgh_quotes {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_nd_prgh {
+    width: 30%;
+}
+
+.content_nd_prgh h1 {
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 2.5rem;
+    color: rgba(245, 239, 239, 0.5) !important;
+}
+
+.content_nd_prgh>p {
+    font-size: 0.8rem;
+    color: rgba(245, 239, 239, 0.787);
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*
+*Blockquote 4th section
+*/
+#section_4th_quotes {
+    background-color: var(--main-txt-color);
+}
+
+.prgh_4th_quotes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.content_4th_prgh {
+    width: 50%;
+}
+
+.content_4th_prgh h1 {
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 2.5rem;
+    color: rgba(245, 239, 239, 0.5) !important;
+}
+
+.content_4th_prgh p {
+    font-size: 0.8rem;
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(245, 239, 239, 0.789) !important;
+}
+
+
+
+/*
+*
+*Asia's Countries
+*
+*/
+#asia_continent,
+#arab_continent {
+    width: 100% !important;
+    padding: 100px;
+}
+
+#asia_continent .asia_countries,
+#arab_continent .arab_countries {
+    width: 80%;
+    margin: auto;
+}
+
+/*Opacity image*/
+
+.countries {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+.hover12 .city img {
+    opacity: 1;
+    -webkit-transition: .7s ease-in-out;
+    transition: .7s ease-in-out;
+    zoom: 0;
+    width: 100%;
+    -moz-transition: .7s ease-in-out;
+    -ms-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+}
+
+.hover12 .city:hover img {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    box-shadow: 1px 1px var(--main-txt-color);
+}
+
+
+/*
+*
+*Europe's Countries
+*
+*/
+#europe_continent,
+#america_continent {
+    width: 100%;
+    margin-top: 100px;
+    padding: 100px;
+    background-color: rgba(235, 235, 235, 0.8);
+}
+
+#europe_continent .europe_countries,
+#america_continent .america_countries {
+    width: 80%;
+    margin: auto;
+}
+
+/*
+qoutes last section
+*/
+
+#section_ls_quotes {
+    width: 100%;
+    background-color: var(--main-txt-color);
+}
+
+.ls-prgh_quotes {
+    width: 70%;
+    padding: 100px;
+    margin: auto;
+}
+
+.ls-prgh_quotes blockquote h1 {
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-bg-color);
+
+}
+
+.ls-prgh_quotes p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    color: var(--main-bg-color);
+
+}
+
+
+/*
+*most relevant comment
+*/
+.frm_comment_ {
+    margin-right: 50px;
+    width: 45%;
+
+}
+
+.comments__list {
+    width: 45%;
+
+}
+
+.comments__list div.relevant_comment {
+    padding: 10px;
+    border-top: 1px solid var(--main-txt-color) !important;
+    border-bottom: 1px solid var(--main-txt-color) !important;
+}
+
+.comments__list div h3 {
+    padding: 5px 0;
+    font-size: 1.2;
+    color: var(--main-txt-color);
+}
+
+.comments__list div p {
+    color: var(--main-txt-color);
+    font-size: 0.8rem;
+}
+
+/*
+*
+*Footer
+*
+*/
+#footer h1{
+    font-size: 2rem !important  ;
+}
+#footer {
+    width: 100%;
+    margin-top: 100px !important;
+    background-color: #212e40;
+    position: relative;
+}
+
+.footer_section {
+    position: relative;
+    width: 100%;
+    padding: 50px !important;
+}
+
+#footer li>i {
+    padding-right: 5px;
+}
+
+#footer ul {
+    padding-right: 15px;
+}
+
+#footer .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.contact_us ul>li>h3 {
+    color: rgba(235, 235, 235, 0.8);
+    padding: 10px 0;
+}
+
+.contact_us>ul>li {
+
+    color: rgba(235, 235, 235, 0.8);
+    font-size: 0.8rem;
+}
+
+.find_us .social_media {
+    margin-top: 25px !important;
+}
+
+.social_media>ul>li {
+    display: inline;
+}
+
+.social_media>ul>li:first-child a {
+    color: rgba(3, 0, 194, 0.931);
+}
+
+.social_media>ul>li:nth-child(2) a {
+    color: rgba(195, 66, 49, 0.945);
+}
+
+.social_media>ul>li:nth-child(3) a {
+    color: rgb(253, 0, 0);
+}
+
+.social_media>ul>li:nth-child(4) a {
+    color: rgba(16, 123, 247, 0.918)
+}
+
+.social_media>ul>li a:hover {
+    color: rgba(0, 0, 0, 0.877);
+}
+
+.logo_footer {
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+    transform: translateX(-35);
+    -webkit-transform: translateX(-35);
+    -moz-transform: translateX(-35);
+    -ms-transform: translateX(-35);
+    -o-transform: translateX(-35);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    color: rgba(235, 235, 235, 0.8);
+}

@@ -1,0 +1,484 @@
+/* 
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Quicksand', sans-serif;
+ */
+ @import url("../../css/homepage/login.css");
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size:16px;
+  --main-txt-color: #181a2b;
+  --main-bg-color: rgba(235, 235, 235, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  font-family: inherit !important;
+  line-height: normal !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+@media only screen and (max-width: 1300px) {
+  :root {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .img_paragraph-3rd{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+@media only screen and (max-width: 450px) {
+  :root {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .img_paragraph-3rd{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}/*
+    logo
+    and navigation bar
+    */
+
+div.navigation {
+       width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+     z-index: 10;
+}
+
+div.bar_navigation>ul li {
+    display: inline-block;
+    margin: 20px 35px 0 0;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding:5px 0;
+
+
+}
+
+div.bar_navigation>ul li a {
+    color: #fff;
+    padding: 5px !important;
+    
+}
+
+div.bar_navigation>ul li.border-box:first-child {
+     border: 2px solid white;
+}
+
+div.bar_navigation>ul>li a:hover
+ {
+    color: #d3d3d39d !important;
+    
+    text-decoration: none;
+   
+
+
+}
+div.bar_navigation>ul>li:hover{
+  border: 2px solid #d3d3d39d !important;
+}
+
+div.bar_navigation>ul>li a:active {
+    color: #373737;
+    border: 2px solid #fff;
+}
+
+/* 
+*----------------------
+*
+*first paragraph 
+*
+*/
+
+div.first_paragraph {
+  width: 100%;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  position: relative;
+  margin: 100px 0;
+}
+
+.first_paragraph .inner-first_paragraph {
+  width: 100%;
+  margin: auto;
+}
+
+.content_paragraph {
+  width: 70%;
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  justify-items: center;
+  align-self: center;
+  align-items: center;
+  background-color: var(--main-bg-color);
+}
+
+.param_first {
+  padding-right: 25px;
+}
+.param_first p {
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  text-align: justify;
+}
+.param_first h1 span {
+  font-size: 2em;
+  color: var(--main-txt-color);
+}
+.param_first h1 {
+  font-size: 2.5rem;
+  color: var(--main-txt-color);
+}
+
+/* --------------------------
+*First paragraph and footer
+*---------------------------
+*style the social_media icon 
+*----------------------------
+*/
+
+.param_first .social_media {
+  margin: 150px 0;
+}
+
+ .social_media>ul>li {
+  display: inline;
+}
+
+ .social_media>ul>li:first-child a {
+  color: rgba(3, 0, 194, 0.931);
+}
+
+ .social_media>ul>li:nth-child(2) a {
+  color: rgba(195, 66, 49, 0.945);
+}
+
+ .social_media>ul>li:nth-child(3) a {
+  color: rgb(253, 0, 0);
+}
+
+.social_media>ul>li:nth-child(4) a {
+  color: rgba(16, 123, 247, 0.918)
+}
+
+ .social_media>ul>li a:hover {
+  color: rgba(0, 0, 0, 0.877);
+}
+
+/*------------------------------
+*
+*second paragraph 
+*-----------------
+*/
+
+div.nd_paragraph {
+  /* position: relative; */
+  /* overflow: hidden; */
+  width: 100%;
+  /* height: 100vh; */
+}
+
+div.nd_paragraph .inner-nd_paragraph {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  background-color: #212e40;
+  width: 100%;
+  padding: 50px;
+  /* height: 100%; */
+}
+
+div.nd_paragraph .inner-nd_paragraph .inner-content_nd2 {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nd_paragraph .content_nd2 {
+  margin: auto;
+  width: 35%;
+  height: 50%;
+  padding: 50px;
+}
+
+.img-para-nd2 img {
+  width: 100%;
+}
+
+.nd_paragraph .content_nd2 p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+/* button paragraph 2  */
+
+.btn-paragraph_nd {
+  padding: 50px 0 0 50px;
+}
+
+/* 
+*
+*3 paragraph, style travel insparation 
+*
+*/
+
+.rd_paragraph3 {
+  /* position: relative; */
+  /* height: 100vh; */
+  width: 100%;
+  margin-top: 100px;
+  /* overflow: hidden; */
+}
+
+.inner-rd-paragraph {
+  /* position: absolute; */
+  width: 100%;
+  /* height: 100%;
+  top: 0;
+  height: 0; */
+}
+
+.rd_paragraph3 .content_title_prg .title_prg {
+  width: 50%;
+}
+
+.rd_paragraph3 .content_title_prg .content_prg3 {
+  width: 50%;
+}
+
+.rd_paragraph3 .content_title_prg .content_prg3>p {
+  color: var(--main-txt-color);
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.rd_paragraph3 .content_title_prg {
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+*
+*image travel insparation with hover button 
+*
+*/
+
+.img_paragraph-3rd {
+  width: 980px;
+  margin: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.image {
+ opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 1s ease;
+  backface-visibility: hidden;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition:all 1s ease;
+}
+
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -o-transition: .5s ease;
+}
+
+.container:hover .image {
+  box-shadow: 2px 2px #373737;
+ opacity: .4;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text_img {
+  background-color: #00000560;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* city break
+4th pragraph */
+
+.city_break {
+  margin-top: 100px;
+  padding: 50px;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  background-image: url("https://res.cloudinary.com/sotiris/image/upload/v1577225175/Images/countrys/Greece/17_xtgvmz.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.prg_4th_title_content {
+  margin: auto;
+  width: 60%;
+
+}
+.title_4th_prg >h1{
+  padding-top: 50px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.content_4th_prg{
+  margin: 50px auto;
+  width: 55%;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+.btn-paragraph_4th{
+  padding: 50px 0;
+  text-align: center;
+}
+
+/*
+*most relevant comment
+*/
+.frm_comment_{
+  margin-right: 25px;
+  width: 45%;
+  
+}
+.comments__list{
+  width:40%;
+
+}
+.comments__list div.relevant_comment{
+  padding: 10px;
+  border-top: 1px solid var(--main-txt-color) !important;
+  border-bottom: 1px solid var(--main-txt-color) !important;
+}
+.comments__list div h3{
+  padding: 5px 0;
+  font-size: 1.2;
+  color: var(--main-txt-color);
+}
+.comments__list div p{
+  color: var(--main-txt-color);
+  font-size: 0.8rem;
+}
+/*
+*
+*Footer
+*
+*/
+#footer{
+  width: 100%;
+  margin-top: 100px;
+  background-color: #212e40 ;
+  position: relative;
+}
+#footer h1{
+  font-size: 2rem !important  ;
+  font-family: 'Roboto', sans-serif;
+
+}
+.footer_section{
+  position: relative;
+  width: 100%;
+  padding: 50px;
+}
+#footer li>i{
+  padding-right: 5px;
+}
+#footer ul{
+  padding-right: 15px;
+}
+#footer .content{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.contact_us ul>li >h3 {
+  color: rgba(235, 235, 235, 0.8);
+padding: 10px 0;
+}
+.contact_us  >ul>li {
+
+  color: rgba(235, 235, 235, 0.8);
+  font-size: 0.8rem;
+  }
+  .find_us .social_media{
+    margin-top:25px ;
+  }
+  .logo_footer{
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+    transform: translateX(-35);
+    -webkit-transform: translateX(-35);
+    -moz-transform: translateX(-35);
+    -ms-transform: translateX(-35);
+    -o-transform: translateX(-35);
+}
+  .copyright{
+    position: absolute;
+    bottom: 5px;
+    right:  15px;
+    color:  rgba(235, 235, 235, 0.8);
+  }

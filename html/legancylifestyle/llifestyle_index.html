@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bird of Passage - The new Travel Guide 2020- Legancy-Lifestyle</title>
+    <link rel="stylesheet" href="../../css/legancylifestyle/life_style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Roboto:400,400i,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/homepage/comment_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/homepage/slideShowStyle.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="img-logo">
+            <a href="../homepage/index.html"><img
+                    src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+                    alt="logo"></a>
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="../homepage/index.html">Home</a></li>
+                <li><a href="../Travell/index.html">Travel</a></li>
+                <li><a href="../TripIdea/tripidea_index.html">Trip Idea</a></li>
+                <li><a href="llifestyle_index.html">Legancy Lifestyle</a></li>
+                <li><a href="../about us/about_us_index.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'">
+                        Login</a></li>
+                <li><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
+            </ul>
+        </div>
+        <script src="../../javascript/script.js"></script>
+    </div>
+
+    <!-- the below code i found it on w3school
+    https://www.w3schools.com/howto/howto_css_login_form.asp -->
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate comments__form" method="POST">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img width="150px" height="150px"
+                    src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" alt="avatar">
+                    <h2 style="text-align: center;">Log In</h2>
+            </div>
+
+            <div class="container comments__form-info" style="width: 80%;">
+                <div class="comments__form-field">
+                    <input id="comments__form-label-name" name="author" placeholder="Name" type="text"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-name">
+                        <span class="comments__form-label-text">Name</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw1" name="password" placeholder="Password" type="password"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-psw1">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <!-- <button type="submit">Login</button> -->
+                <input name="submit" type="submit" id="submit" class="comments__form-submit" value="Login"
+                    style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1; width: 80%;">
+                <input onclick="document.getElementById('id01').style.display='none'" name="submit" type="submit"
+                    id="cancel" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                    style="width: 100%; text-align: center; border-color: brown;">
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+    <!-- end of first code -->
+    <div id="id02" class="modal">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+        title="Close Modal">&times;</span>
+   
+        </div>
+      
+        <form class="modal-content animate comments__form" method="post">
+            <div class="container comments__form-info" style="width: 80%;">
+                <h2>Create Your account</h2>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <div class="fullname">
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-name1" name="author" placeholder="Name" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-name1">
+                            <span class="comments__form-label-text">Name</span>
+                        </label>
+                    </div>
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-surname" name="author" placeholder="Surname" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-surname">
+                            <span class="comments__form-label-text">Surname</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-email" name="password" placeholder="Enter your Email" type="email"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-email">
+                        <span class="comments__form-label-text">Email</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw" name="password" placeholder="Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-psw">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-re-psw" name="password" placeholder="Re-Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-re-psw">
+                        <span class="comments__form-label-text">Re-Password</span>
+                    </label>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <div class="fullname">
+                    <input onclick="document.getElementById('id02').style.display='none'" name="submit" type="submit"
+                        id="cnx" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                        style="width: 100%; text-align: center; border-color: brown;">
+                    <input name="submit" type="submit" id="sing_up" class="comments__form-submit signupbtn"
+                        value="Sign Up" style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+                </div>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id02');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+    <!-- header backround -->
+    <section id="header">
+        <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            height="100%" width="100%" alt="boat in the sea">
+    </section>
+    <!-- header title  -->
+    <section id="sec_prgph_1">
+        <div class="sec-container">
+            <h2>Earn and spend Rewards</h2>
+            <h3>Join our premier luxury rewards programme</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget metus in dolor efficitur viverra
+                eu ac ipsum. Duis molestie, elit nec tincidunt mattis, dui dolor sollicitudin turpis, quis aliquam quam
+                odio vitae ipsum. Nulla finibus id nisl et pharetra. Nunc consequat fermentum nisi, vel facilisis purus.
+                Morbi accumsan massa fringilla sapien eleifend, sit a sit amet egestas neque vestibulum. Duis ut
+                tristique mi. Duis at suscipit erat, id aliquam lacus. Etiam convallis malesuada placerat.
+
+                Nullam convallis condimentum mauris, vitae interdum ex blandit eu. Curabitur velit ipsum, accumsan vel
+                ante et, efficitur euismod lorem. Vivamus et tempus quam, at egestas erat. Pellentesque mollis nibh ac
+                elementum ultricies. Duis interdum felis dolor, in rutrum eros consectetur id. Curabitur efficitur
+                efficitur purus, sed placerat augue rhoncus nec. Pellentesque mollis iaculis nibh.
+            </p>
+        </div>
+    </section>
+    <section id="sec_prgph_2">
+        <div class="sec-container">
+            <div class="box-container">
+                <h3>general membership benefits</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Free to join and no monthly costs</li>
+                    <li><i class="fas fa-check"></i> Your mobile is your membership number - no need for a card </li>
+                    <li><i class="fas fa-check"></i> Lifestyle Rands only expire after 36 months </li>
+                    <li><i class="fas fa-check"></i> Earn up to 16% of your spend back to Spend in the Partner Netwo
+                    </li>
+                    <li><i class="fas fa-check"></i> Sed turpis odio, placerat in pellentesque a, sollicitudin sit amet
+                        urna.</li>
+                    <li><i class="fas fa-check"></i> Nunc elementum est dictum vehicula dignissim. Aenean et congue
+                        orci.</li>
+                    <li><i class="fas fa-check"></i>Pellentesque augue magna, pharetra sed lacus a, lacinia scelerisque
+                        nibh. </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="sec_prgph_3">
+        <div class="sec-container">
+            <div class="box-container">
+                <h3>Travel membership benefits</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Gain access to exclusive travel rates unavailable to the public
+                    </li>
+                    <li><i class="fas fa-check"></i> Unlock special promotions and incredible deals </li>
+                    <li><i class="fas fa-check"></i> Receive personalised travel service, and customised travel offers
+                    </li>
+                    <li><i class="fas fa-check"></i> Nulla blandit turpis tempor, tincidunt elit eget, imperdiet mi.
+                    </li>
+                    <li><i class="fas fa-check"></i> Sed turpis odio, placerat in pellentesque a, sollicitudin sit amet
+                        urna.</li>
+                    <li><i class="fas fa-check"></i> Nunc elementum est dictum vehicula dignissim. Aenean et congue
+                        orci.</li>
+                    <li><i class="fas fa-check"></i> Aenean sit amet eleifend diam, at luctus magna. Cras porta nibh
+                        quis
+                        orci interdum, et ornare neque ultrices</li>
+                    <li><i class="fas fa-check"></i> Ut justo felis, venenatis ut varius id, euismod id est. In vitae
+                        magna a tellus tincidunt dapibus. </li>
+                    <li><i class="fas fa-check"></i> Nam euismod ligula sed ex maximus, quis euismod lacus facilisis.
+                    </li>
+                </ul>
+            </div>
+        </div>
+   </section>
+    <div class="btn-join">
+        <a  onclick="document.getElementById('id02').style.display='block'" href="#" class="btn" style="padding: 10px 30px; border: 1px solid #181a2b;  ">
+            <span class="btn-inner" style="color: #181a2b; font-weight: 900; font-size: 1rem;" >Join now <i
+                    class="fas fa-angle-double-right" style="color: rgb(0,0,255); font-size: 1rem;"></i></span>
+        </a>
+    </div>
+    <footer>
+        <section id="footer">
+            <div class="footer_section">
+                <div class="content">
+                    <div class="contact_us" style="width: 30%;">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Contact us</h1>
+                        <ul>
+                            <li>
+                                <h3>Limasol</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>25 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 321548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@limasol.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Larnaca</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>24 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 221548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@larnaca.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Nicosia</h3>
+                                <ul>
+                                    <li><i class='fas' style="font-size: 12px;">&#xf879;</i>22 123654</li>
+                                    <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 121548</li>
+                                    <li><i class="fas fa-at" style="font-size: 10px;"></i>info@nicosia.com</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="find_us" style="width: 30%;">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Find us </h1>
+                        <div class="social_media">
+                            <ul>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                                <li><a href="#"> <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subscribe" style="width: 30%;">
+                        <div class="subscribe">
+                            <h1 style="color: rgba(255, 255, 255, 0.589);">Subscribe for news</h1>
+                            <form action="#" method="POST">
+                                <div class="comments__form-field">
+                                    <input id="comments__form-label-mail" name="author" placeholder="Enter your E-mail"
+                                        type="text" class="comments__form-input"
+                                        style="background-color: transparent; color: #fff;">
+                                    <label class="comments__form-label" for="comments__form-label-mail">
+                                        <span class="comments__form-label-text"
+                                            style="color:  rgba(255, 255, 255, 0.589);">E-mail</span>
+                                    </label>
+                                </div>
+                                <input name="submit" type="submit" class="comments__form-submit" value="Subscribe"
+                                    style="color:#fff ;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_footer" style="margin: 50px 50px 0 -50px "><a href="#">
+                        <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+                            alt="logo"></a>
+                </div>
+                <div class="copyright">&copy; copyright Bird of passage | All right reserved</div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

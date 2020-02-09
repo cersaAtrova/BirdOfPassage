@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bird of Passage - The new Travel Guide 2020 About us</title>
+    <link rel="stylesheet" href="../../css/about us/about_us_style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Roboto:400,400i,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/homepage/comment_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="img-logo">
+            <a href="../homepage/index.html"><img
+                    src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+                    alt="logo"></a>
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="../homepage/index.html">Home</a></li>
+                <li><a href="../Travell/index.html">Travel</a></li>
+                <li><a href="../TripIdea/tripidea_index.html">Trip Idea</a></li>
+                <li><a href="../legancylifestyle/llifestyle_index.html">Legancy Lifestyle</a></li>
+                <li class="border-box"><a href="about_us_index.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="bar_navigation">
+            <ul>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'">
+                        Login</a></li>
+                <li><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
+            </ul>
+        </div>
+        <script src="../../javascript/script.js"></script>
+    </div>
+
+    <!-- the below code i found it on w3school
+    https://www.w3schools.com/howto/howto_css_login_form.asp -->
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate comments__form" method="POST">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img width="150px" height="150px"
+                    src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" alt="avatar">
+                <h2 style="text-align: center;">Log In</h2>
+            </div>
+
+            <div class="container comments__form-info" style="width: 80%;">
+                <div class="comments__form-field">
+                    <input id="comments__form-label-name" name="author" placeholder="Name" type="text"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-name">
+                        <span class="comments__form-label-text">Name</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw1" name="password" placeholder="Password" type="password"
+                        class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-psw1">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <!-- <button type="submit">Login</button> -->
+                <input name="submit" type="submit" id="submit" class="comments__form-submit" value="Login"
+                    style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1; width: 80%;">
+                <input onclick="document.getElementById('id01').style.display='none'" name="submit" type="submit"
+                    id="cancel" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                    style="width: 100%; text-align: center; border-color: brown;">
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+    <!-- end of first code -->
+    <div id="id02" class="modal">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+        </div>
+        <form class="modal-content animate comments__form" method="post">
+            <div class="container comments__form-info" style="width: 80%;">
+                <h2>Create Your account</h2>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <div class="fullname">
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-name1" name="author" placeholder="Name" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-name1">
+                            <span class="comments__form-label-text">Name</span>
+                        </label>
+                    </div>
+                    <div class="comments__form-field" style="width: 45%;">
+                        <input id="comments__form-label-surname" name="author" placeholder="Surname" type="text"
+                            class="comments__form-input" required>
+                        <label class="comments__form-label" for="comments__form-label-surname">
+                            <span class="comments__form-label-text">Surname</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-email" name="password" placeholder="Enter your Email" type="email"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-email">
+                        <span class="comments__form-label-text">Email</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-psw" name="password" placeholder="Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-psw">
+                        <span class="comments__form-label-text">Password</span>
+                    </label>
+                </div>
+                <div class="comments__form-field">
+                    <input id="comments__form-label-re-psw" name="password" placeholder="Re-Password" type="password"
+                        class="comments__form-input" required>
+                    <label class="comments__form-label" for="comments__form-label-re-psw">
+                        <span class="comments__form-label-text">Re-Password</span>
+                    </label>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <div class="fullname">
+                    <input onclick="document.getElementById('id02').style.display='none'" name="submit" type="submit"
+                        id="cnx" class="cancelbtn comments__form-submit signupbtn" value="Cancel"
+                        style="width: 100%; text-align: center; border-color: brown;">
+                    <input name="submit" type="submit" id="sing_up" class="comments__form-submit signupbtn"
+                        value="Sign Up" style="width: 100%; text-align: center; border-color: rgba(0, 0, 255, 0.8);">
+                </div>
+            </div>
+        </form>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id02');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+
+    <section id="header">
+        <div>
+            <h2>About us</h2>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_450,w_700/v1577223860/wolrd_countries_pdrw51.jpg"
+                alt="boat in the sea">
+        </div>
+    </section>
+    <section class="sec_prgph_1">
+        <div class="sec_container">
+
+            <div class="sec_title">
+                <h3>We decided to make lide more interesting and take change on what we love.</h3>
+
+                <div>
+                    <h4>Sotiris Kastanas</h4>
+                    <h5>Blogger Bird of Passage</h5>
+                    <img src="../../signutare.png" alt="signutare">
+                </div>
+
+            </div>
+
+            <div class="sec_description">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper risus nisl, eget maximus
+                    purus convallis non. Aenean et pretium libero. Cras urna nisl, tempus eu lectus id, interdum iaculis
+                    justo. Duis euismod eget arcu at condimentum. Duis pretium ac felis at hendrerit. Nam tempor maximus
+                    tristique. Suspendisse potenti. Ut nec urna quis magna rutrum vulputate. Ut posuere metus fermentum
+                    nisl
+                    euismod rhoncus. Duis viverra suscipit tincidunt. Quisque porta, lectus sit amet sagittis
+                    ullamcorper,
+                    ex leo tempus lorem, id congue dui nulla non tortor.
+                </p>
+                <p>
+                    Etiam fermentum congue auctor. Phasellus orci dui, volutpat vel suscipit nec, maximus et diam. In
+                    scelerisque tellus ut mi suscipit posuere quis vel dolor. Aliquam erat volutpat. Aliquam erat
+                    volutpat.
+                    Nulla volutpat sed nunc ac viverra. Proin scelerisque suscipit semper. Aliquam justo tortor, commodo
+                    quis tellus sit amet, ultricies blandit nibh. Phasellus semper consequat nibh. Vestibulum et porta
+                    mauris, rhoncus mattis orci. Vivamus sem ante, vehicula et arcu a, maximus laoreet velit. </p>
+            </div>
+        </div>
+    </section>
+    <section class="sec_prgph_2">
+        <div class="sec_2_title">
+            <h1>Just Go</h1>
+            <p>urabitur nec tincidunt lectus. Vestibulum et laoreet lorem. Etiam nec imperdiet quam. Praesent dui est,
+                dignissim sit amet libero et, cursus mattis purus. Pellentesque malesuada ipsum ut imperdiet
+                pellentesque.
+                Donec vel diam quis velit interdum tincidunt. Suspendisse vitae nibh ut urna finibus eleifend sit amet
+                eu
+                massa. Donec faucibus condimentum velit, a placerat ex pulvinar et. Nullam feugiat id nunc ut mattis.
+                Interdum et malesuada fames ac ante ipsum primis in faucibus</p>
+        </div>
+    </section>
+    <section class="sec-img-container">
+        <div class="img_frst"> </div>
+        <div class="img_nd">
+            <div class="img-nd-fst"></div>
+            <div class="img-nd-nd"></div>
+        </div>
+    </section>
+    <!-- section responsobiity -->
+    <section class="sec_responsibility">
+        <div class="sec-res-container">
+            <div>
+                <img src="https://res.cloudinary.com/sotiris/image/upload/v1577577412/Oct19_22_1084552028_qmtpmw.png" alt="">
+
+            </div>
+            <div class="sec-resp-title">
+                <h2>Responsibility</h2>
+                <p>Cras ultricies placerat tempus. Sed ex felis, tincidunt eget magna ut, venenatis commodo nibh. Proin
+                    ornare vulputate quam, ut finibus purus gravida in. Proin lacus lorem, hendrerit at pulvinar ut,
+                    tristique consequat massa. Pellentesque vitae consequat purus. Orci varius natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus. Vestibulum mollis posuere enim eget bibendum.
+                    Donec non elementum turpis, eu gravida nisl. </p>
+            </div>
+        </div>
+        <div class="resp-prgph_2">
+            <p>Nunc eget elit sed lorem laoreet accumsan. Praesent efficitur orci quam, vitae gravida nisi auctor at.
+                Nulla eget mollis metus, id dapibus nulla. Sed in pharetra nibh, sit amet suscipit dui. Donec pharetra
+                felis ac nibh faucibus, et imperdiet velit efficitur. Quisque feugiat purus turpis, id lacinia dui
+                ullamcorper et. Nulla pulvinar ullamcorper est ut cursus. Curabitur luctus eget libero ut vulputate.
+                Fusce elit nunc, vestibulum non augue ut, maximus fringilla dolor. Integer sed elit ullamcorper,
+                facilisis eros sed, semper urna. Aenean rutrum suscipit dui ut ultricies. Morbi vulputate luctus est,
+                tempor facilisis dolor pharetra ut. Aenean scelerisque sollicitudin vestibulum. Pellentesque semper
+                interdum porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Praesent sit amet consequat dolor, quis tristique nisi. </p>
+            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi et ipsum dui. Aenean ac aliquam leo,
+                a tincidunt magna. Nam pellentesque nisl a urna accumsan mattis. Vestibulum pretium molestie imperdiet.
+                Nulla pellentesque, quam non vehicula ullamcorper, ipsum orci placerat elit, eget mollis dui lacus eget
+                augue. Curabitur venenatis turpis ut dui vehicula varius. Morbi mattis faucibus turpis ac interdum.
+                Curabitur ullamcorper mauris sollicitudin, mollis ipsum ut, laoreet massa. Fusce quis gravida mauris.
+                Mauris et velit vehicula, pellentesque ligula sed, placerat ante. Nam consectetur, lacus sed porta
+                feugiat, nibh ante imperdiet tortor, id tempor ex orci vel risus. Vestibulum venenatis, ipsum nec
+                pulvinar elementum, lectus metus congue est, in blandit risus tortor quis erat. </p>
+            <p>In ultricies, ante vitae molestie egestas, nisl risus placerat eros, ac maximus nisl magna quis mi.
+                Phasellus blandit finibus felis. Nullam mauris felis, interdum sed elementum eu, dictum a lacus. Aliquam
+                viverra justo eget vestibulum volutpat. Nulla viverra congue neque, a condimentum est maximus quis.
+                Aliquam porttitor sodales malesuada. Nullam egestas ante at tellus ultricies elementum. Integer
+                ultrices, orci non tempor tempor, nulla felis accumsan orci, sit amet vestibulum nulla turpis id odio.
+                Aliquam erat volutpat. Vestibulum tempor a urna sollicitudin maximus. Nam non gravida eros, rhoncus
+                porta mi. Donec tincidunt placerat arcu in scelerisque. Duis fringilla vel magna ut malesuada. Curabitur
+                ultricies dui est, vitae viverra sem egestas sit amet. blandit risus tortor quis erat. </p>
+
+        </div>
+    </section>
+    <section class=" sec_blogger">
+        <div class="sec-container-blogger">
+            <div class="img-box-container">
+                <div class="image-box">
+                    <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,w_300/v1577578618/IMG_0807_1_esgrbe.jpg"
+                        alt="">
+                </div>
+                <div class="img-box-content">
+                    <div>
+                        <h4>Sotiris Kastanas</h4>
+                        <h5>Blogger Bird of Passage</h5>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="tel-blogger">+357 99878787</li>
+                            <li class="mail-blogger">info@birdofpassage.com</li>
+
+                        </ul>
+                    </div>
+                    <div class="social_media">
+                        <ul>
+                            <li><a href="#"> <span class="fa-stack fa-md">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span></a></li>
+                            <li><a href="#"> <span class="fa-stack fa-md">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span></a></li>
+                            <li><a href="#"> <span class="fa-stack fa-md">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                    </span></a></li>
+                            <li><a href="#"> <span class="fa-stack fa-md">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="qoute-box-container">
+                <blockquote>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ex augue. Curabitur
+                    sollicitudin ut urna non pretium. Nunc ac enim volutpat, lacinia nibh sit amet, rhoncus dolor.
+                    Morbi id semper dolor. In id velit sed diam bibendum vestibulum. Morbi vel arcu maximus, iaculis
+                    leo eu, sodales urna. Nunc consectetur tellus elit, et accumsan dolor maximus ut. Praesent
+                    iaculis lacus in arcu sodales sollicitudin. Nam augue odio, maximus at ligula nec, mollis
+                    commodo justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Proin aliquam placerat ultricies. </blockquote>
+                <span style="display: block; text-align: right;"><i class="fas fa-quote-right"></span></i>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sec_insparation">
+
+    </section>
+
+
+
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-center m-auto">
+                    <h2><span>Travel the world with us</span></h2>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                            <li data-target="#myCarousel" data-slide-to="7"></li>
+                            <li data-target="#myCarousel" data-slide-to="8"></li>
+                            <li data-target="#myCarousel" data-slide-to="9"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcST8xcsaA7AO6fZbaVsXL0nNdrJkq5XCeeX59V33kR_l_cgcg_P"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCFlmzP5rjKdBrJXO9HT8L5YKLQg-Z5aqjgFnyvLRUuGdBLnWt"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTK-7JZdUeZIrWQuVTHo5B_ptRV6rsTM7BM75RwQnbyvMc5FQJu"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvTJZubk1fm0Kt7xo77uCLlHp9qsqCsvxdw_ZKENiz_aYn1HM1"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQekjz6XZoHc9HRmDc-5p0FFS_WfCW9yOQEaCZCkqbjuDHY2X8E"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRk0lmj5mVD0_w57L6UR4xBTwJiHx5t5IqXXy5Q6eaibm8JIj5_"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item ">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://media.gettyimages.com/photos/arcs-picture-id129438450?s=2048x2048"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://media.gettyimages.com/photos/farm-worker-picking-ripe-oranges-from-orange-tree-branches-picture-id976816036?s=2048x2048"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://media.gettyimages.com/photos/tourists-on-mediterranean-summer-holidays-having-lunch-and-eating-picture-id964989936?s=2048x2048"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item ">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUO0HHQY_xgNHge8YdLNE6Byb6sSo5eo2EgpSX-6M5bCTKmVIOg&s"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReOx2sbeUohjtsVMyTeRWwoNHXAHZFvdI-nzaxjXJu3eaHtARl"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSh8SFtZoZAIt_leXkay2pCAS4mq7XpysSUxvHsGQQGYtB33bcs"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4oX5H3rs7_k3AUORDgIKAjk-4unFjIJ3H-gfM7bgvILD5t7Mr"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLP_n94xTGO6MYVx9XMyd0XfIlAkRQqjPe9rV8Y04kT_zm1Hdn"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRg0x3EEo5N3SWAW23PF01AVYY_7h6hFDT04oV8Mo8Z3rLBI_i0"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://images.unsplash.com/photo-1491383294311-b702fff30fc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://c7.alamy.com/comp/F7AY96/colorful-decorated-cart-traditional-sicilian-rural-horse-drawn-carriage-F7AY96.jpg"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQfmiY4BvbQ8IL6ufHdGqfZ3DeJgxmC_TIiDzw06aKNyqLXL4vc"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://image.shutterstock.com/image-photo/sea-cave-near-cape-greko-600w-1022404657.jpg"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://image.shutterstock.com/image-photo/cyprus-night-limassol-promenade-aerial-260nw-1500401573.jpg"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://images.unsplash.com/photo-1560860446-c821e910a0a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://www.touropia.com/gfx/d/tourist-attractions-in-cyprus/omodos_village.jpg?v=d09fe1b3b3a582c61312fd8937f18721"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://www.touropia.com/gfx/d/rock-cut-tombs-and-temples/tomb_of_the_kings.jpg?v=1"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://www.touropia.com/gfx/d/tourist-attractions-in-cyprus/zenobia_wreck_diving.jpg?v=d09fe1b3b3a582c61312fd8937f18721"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOlAFqUKmODqRiPFJT0fnsI32wBDtzNGhUSqkKhrhlaHCMlLvL"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1sDePaDeRcIgfLJ-XYW_zD8OKi15motesuEmEdbV8_iBB3jaf"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://c7.alamy.com/comp/EFDR50/colorful-street-in-malcesine-lake-garda-lombardy-italy-EFDR50.jpg"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9BAxwpJEyEIVTWUsXXoaQfSvSIzKtzecPvJtjCFasXUoJiNVv"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSNz8j7fmbwRpN8hYeqMbxCEgmtqE_OEdvKFXmYo74thFWYfrjA"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="img-box"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHKz1YU0Q29s0KFdLyunt2EmRg9GTdCGsSsdgpAFWiaBIVdBbV"
+                                                class="img-responsive img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer_section">
+            <div class="content">
+                <div class="contact_us" style="width: 30%;">
+                    <h1 style="color: rgba(255, 255, 255, 0.589);">Contact us</h1>
+                    <ul>
+                        <li>
+                            <h3>Limasol</h3>
+                            <ul>
+                                <li><i class='fas' style="font-size: 12px;">&#xf879;</i>25 123654</li>
+                                <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 321548</li>
+                                <li><i class="fas fa-at" style="font-size: 10px;"></i>info@limasol.com</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Larnaca</h3>
+                            <ul>
+                                <li><i class='fas' style="font-size: 12px;">&#xf879;</i>24 123654</li>
+                                <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 221548</li>
+                                <li><i class="fas fa-at" style="font-size: 10px;"></i>info@larnaca.com</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Nicosia</h3>
+                            <ul>
+                                <li><i class='fas' style="font-size: 12px;">&#xf879;</i>22 123654</li>
+                                <li><i class="fas fa-mobile-alt" style="font-size: 12px;"></i>+357 99 121548</li>
+                                <li><i class="fas fa-at" style="font-size: 10px;"></i>info@nicosia.com</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="find_us" style="width: 30%;">
+                    <h1 style="color: rgba(255, 255, 255, 0.589);">Find us </h1>
+                    <div class="social_media">
+                        <ul>
+                            <li><a href="#"> <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span></a></li>
+                            <li><a href="#"> <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span></a></li>
+                            <li><a href="#"> <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                    </span></a></li>
+                            <li><a href="#"> <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subscribe" style="width: 30%;">
+                    <div class="subscribe">
+                        <h1 style="color: rgba(255, 255, 255, 0.589);">Subscribe for news</h1>
+                        <form action="#" method="POST">
+                            <div class="comments__form-field">
+                                <input id="comments__form-label-mail" name="author" placeholder="Enter your E-mail"
+                                    type="text" class="comments__form-input"
+                                    style="background-color: transparent; color: #fff;">
+                                <label class="comments__form-label" for="comments__form-label-mail">
+                                    <span class="comments__form-label-text"
+                                        style="color:  rgba(255, 255, 255, 0.589);">E-mail</span>
+                                </label>
+                            </div>
+                            <input name="submit" type="submit" class="comments__form-submit" value="Subscribe"
+                                style="color:#fff ;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="logo_footer" style="margin: 50px 50px 0 -50px "><a href="../homepage/index.html">
+                    <img src="https://res.cloudinary.com/sotiris/image/upload/c_scale,h_110,w_200/v1577224087/Images/logo_euztxp.png"
+                        alt="logo"></a>
+            </div>
+            <div class="copyright">&copy; copyright Bird of passage | All right reserved</div>
+        </div>
+    </section>
+    </footer>
+</body>
+
+</html>
